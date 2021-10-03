@@ -1,7 +1,7 @@
-# hello-world
+# hello-world welcome to my Lab ! 
 
-Hello Humans, 
 
-This is a new era, the era of robots and terminator so BE AWARE !
+Here you'll find some of my fun projects and inventions
 
-Best regards
+
+## Have fun ! 

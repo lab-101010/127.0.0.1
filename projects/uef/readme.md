@@ -1,1 +1,1 @@
-# uef blog
+# uef

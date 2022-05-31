@@ -1,6 +1,6 @@
 # Overview
 
-This tool allows to retrieve the content of a file (.txt; .py; .cpp) using python and regex
+This tool allows to retrieve specific contents from a file (.txt; .py; .cpp) using python and regex
 
 ## Requirements 
 

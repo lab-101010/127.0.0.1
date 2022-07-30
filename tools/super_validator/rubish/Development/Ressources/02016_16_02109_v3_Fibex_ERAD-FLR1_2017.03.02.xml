@@ -1,0 +1,2292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fx:FIBEX xmlns:fx="http://www.asam.net/xml/fbx" xmlns:all="http://www.asam.net/xml/fbx/all" xmlns:asr30cannm="http://www.asam.net/xml/fbx/nm/cannm/asr30" xmlns:asr30cantp="http://www.asam.net/xml/fbx/tp/cantp/asr30" xmlns:asr30frnm="http://www.asam.net/xml/fbx/nm/frnm/asr30" xmlns:asr30frtp="http://www.asam.net/xml/fbx/tp/frtp/asr30" xmlns:asr30nm="http://www.asam.net/xml/fbx/nm/asr30" xmlns:asr30tp="http://www.asam.net/xml/fbx/tp/asr30" xmlns:can="http://www.asam.net/xml/fbx/can" xmlns:flexray="http://www.asam.net/xml/fbx/flexray" xmlns:ho="http://www.asam.net/xml" xmlns:lin="http://www.asam.net/xml/fbx/lin" xmlns:most="http://www.asam.net/xml/fbx/most" xmlns:ttcan="http://www.asam.net/xml/fbx/ttcan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" VERSION="3.1.0">
+  <!--PREEvision 7.5.5 final-->
+  <!--Fibex Version: 3.1.0-->
+  <!--Date: 2017.03.02 at 17:04:15-->
+  <fx:PROJECT ID="x1451_1488470650995">
+    <ho:SHORT-NAME>Project</ho:SHORT-NAME>
+  </fx:PROJECT>
+  <fx:PROTOCOLS/>
+  <fx:ELEMENTS>
+    <fx:CLUSTERS>
+      <fx:CLUSTER ID="imex_a4a627e15a8e738f044f846_a4a627e15a8e738f044f845" xsi:type="flexray:CLUSTER-TYPE">
+        <ho:SHORT-NAME>ERAD_ClusterSdt_FLR1</ho:SHORT-NAME>
+        <fx:SPEED>10000000</fx:SPEED>
+        <fx:IS-HIGH-LOW-BIT-ORDER>true</fx:IS-HIGH-LOW-BIT-ORDER>
+        <fx:BIT-COUNTING-POLICY>SAWTOOTH</fx:BIT-COUNTING-POLICY>
+        <fx:PROTOCOL xsi:type="flexray:PROTOCOL-TYPE">FlexRay</fx:PROTOCOL>
+        <fx:CHANNEL-REFS>
+          <fx:CHANNEL-REF ID-REF="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847"/>
+        </fx:CHANNEL-REFS>
+        <fx:NUMBER-OF-CYCLES>64</fx:NUMBER-OF-CYCLES>
+        <flexray:COLD-START-ATTEMPTS>10</flexray:COLD-START-ATTEMPTS>
+        <flexray:ACTION-POINT-OFFSET>4</flexray:ACTION-POINT-OFFSET>
+        <flexray:DYNAMIC-SLOT-IDLE-PHASE>0</flexray:DYNAMIC-SLOT-IDLE-PHASE>
+        <flexray:MINISLOT>6</flexray:MINISLOT>
+        <flexray:MINISLOT-ACTION-POINT-OFFSET>2</flexray:MINISLOT-ACTION-POINT-OFFSET>
+        <flexray:N-I-T>10</flexray:N-I-T>
+        <flexray:SAMPLE-CLOCK-PERIOD>0.0125</flexray:SAMPLE-CLOCK-PERIOD>
+        <flexray:STATIC-SLOT>22</flexray:STATIC-SLOT>
+        <flexray:SYMBOL-WINDOW>0</flexray:SYMBOL-WINDOW>
+        <flexray:T-S-S-TRANSMITTER>11</flexray:T-S-S-TRANSMITTER>
+        <flexray:WAKE-UP>
+          <flexray:WAKE-UP-SYMBOL-RX-IDLE>59</flexray:WAKE-UP-SYMBOL-RX-IDLE>
+          <flexray:WAKE-UP-SYMBOL-RX-LOW>50</flexray:WAKE-UP-SYMBOL-RX-LOW>
+          <flexray:WAKE-UP-SYMBOL-RX-WINDOW>301</flexray:WAKE-UP-SYMBOL-RX-WINDOW>
+          <flexray:WAKE-UP-SYMBOL-TX-IDLE>180</flexray:WAKE-UP-SYMBOL-TX-IDLE>
+          <flexray:WAKE-UP-SYMBOL-TX-LOW>60</flexray:WAKE-UP-SYMBOL-TX-LOW>
+        </flexray:WAKE-UP>
+        <flexray:LISTEN-NOISE>2</flexray:LISTEN-NOISE>
+        <flexray:MACRO-PER-CYCLE>2500</flexray:MACRO-PER-CYCLE>
+        <flexray:MACROTICK>2.0</flexray:MACROTICK>
+        <flexray:MAX-INITIALIZATION-ERROR>0.740075</flexray:MAX-INITIALIZATION-ERROR>
+        <flexray:MAX-WITHOUT-CLOCK-CORRECTION-FATAL>2</flexray:MAX-WITHOUT-CLOCK-CORRECTION-FATAL>
+        <flexray:MAX-WITHOUT-CLOCK-CORRECTION-PASSIVE>2</flexray:MAX-WITHOUT-CLOCK-CORRECTION-PASSIVE>
+        <flexray:NETWORK-MANAGEMENT-VECTOR-LENGTH>2</flexray:NETWORK-MANAGEMENT-VECTOR-LENGTH>
+        <flexray:NUMBER-OF-MINISLOTS>136</flexray:NUMBER-OF-MINISLOTS>
+        <flexray:NUMBER-OF-STATIC-SLOTS>76</flexray:NUMBER-OF-STATIC-SLOTS>
+        <flexray:OFFSET-CORRECTION-START>2494</flexray:OFFSET-CORRECTION-START>
+        <flexray:PAYLOAD-LENGTH-STATIC>8</flexray:PAYLOAD-LENGTH-STATIC>
+        <flexray:SYNC-NODE-MAX>15</flexray:SYNC-NODE-MAX>
+        <flexray:CAS-RX-LOW-MAX>91</flexray:CAS-RX-LOW-MAX>
+        <flexray:BIT>0.1</flexray:BIT>
+        <flexray:CYCLE>5000</flexray:CYCLE>
+        <flexray:CLUSTER-DRIFT-DAMPING>1</flexray:CLUSTER-DRIFT-DAMPING>
+      </fx:CLUSTER>
+    </fx:CLUSTERS>
+    <fx:CHANNELS>
+      <fx:CHANNEL ID="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847" xsi:type="flexray:CHANNEL-TYPE">
+        <ho:SHORT-NAME>PhyChannel_FLR1</ho:SHORT-NAME>
+        <fx:PDU-TRIGGERINGS>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f245">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efc9"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f299">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f05d"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f279">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f029"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f265">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.080S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f005"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f259">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee6b"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f25d">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eefe_a4a627e15a8e738f044eefd"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f289">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eeb5"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f251">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.010S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef8d"/>
+          </fx:PDU-TRIGGERING>
+          <fx:PDU-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f27d">
+            <fx:TIMINGS>
+              <fx:CYCLIC-TIMING>
+                <fx:REPEATING-TIME-RANGE>
+                  <fx:VALUE>PT0.020S</fx:VALUE>
+                </fx:REPEATING-TIME-RANGE>
+              </fx:CYCLIC-TIMING>
+            </fx:TIMINGS>
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eecf"/>
+          </fx:PDU-TRIGGERING>
+        </fx:PDU-TRIGGERINGS>
+        <fx:FRAME-TRIGGERINGS>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d9">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">32</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">2</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f148_a4a627e15a8e738f044f147"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3df">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">43</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">2</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f132_a4a627e15a8e738f044f131"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3e3">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">27</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">1</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">16</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f126_a4a627e15a8e738f044f125"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d1">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">25</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">2</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f118_a4a627e15a8e738f044f117"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d3">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">30</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">4</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f10a_a4a627e15a8e738f044f109"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3eb">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">23</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">1</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">2</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f10e_a4a627e15a8e738f044f10d"/>
+          </fx:FRAME-TRIGGERING>
+          <fx:FRAME-TRIGGERING ID="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d5">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">43</fx:SLOT-ID>
+                <fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">1</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">2</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="imex_a4a627e15a8e738f044f138_a4a627e15a8e738f044f137"/>
+          </fx:FRAME-TRIGGERING>
+        </fx:FRAME-TRIGGERINGS>
+        <flexray:FLEXRAY-CHANNEL-NAME>A</flexray:FLEXRAY-CHANNEL-NAME>
+      </fx:CHANNEL>
+    </fx:CHANNELS>
+    <fx:ECUS>
+      <fx:ECU ID="imex_a4a627e15a8e738f044f82a_a4a627e15a8e738f044f829">
+        <ho:SHORT-NAME>ERAD</ho:SHORT-NAME>
+        <fx:CONTROLLERS>
+          <fx:CONTROLLER ID="imex_a4a61941506f537ac832a4f_a4a61941506f537ac832a4e" xsi:type="flexray:CONTROLLER-TYPE">
+            <ho:SHORT-NAME>FLRSdtCtrlr_ERAD_FLR1</ho:SHORT-NAME>
+            <flexray:KEY-SLOT-USAGE>
+              <flexray:NONE/>
+            </flexray:KEY-SLOT-USAGE>
+            <flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>73</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+            <flexray:CLUSTER-DRIFT-DAMPING>1</flexray:CLUSTER-DRIFT-DAMPING>
+            <flexray:DECODING-CORRECTION>56</flexray:DECODING-CORRECTION>
+            <flexray:LISTEN-TIMEOUT>401202</flexray:LISTEN-TIMEOUT>
+            <flexray:MAX-DRIFT>601</flexray:MAX-DRIFT>
+            <flexray:EXTERN-OFFSET-CORRECTION>0</flexray:EXTERN-OFFSET-CORRECTION>
+            <flexray:EXTERN-RATE-CORRECTION>0</flexray:EXTERN-RATE-CORRECTION>
+            <flexray:LATEST-TX>123</flexray:LATEST-TX>
+            <flexray:MICRO-PER-CYCLE>200000</flexray:MICRO-PER-CYCLE>
+            <flexray:OFFSET-CORRECTION-OUT>349</flexray:OFFSET-CORRECTION-OUT>
+            <flexray:RATE-CORRECTION-OUT>601</flexray:RATE-CORRECTION-OUT>
+            <flexray:SAMPLES-PER-MICROTICK>2</flexray:SAMPLES-PER-MICROTICK>
+            <flexray:DELAY-COMPENSATION-A>10</flexray:DELAY-COMPENSATION-A>
+            <flexray:DELAY-COMPENSATION-B>10</flexray:DELAY-COMPENSATION-B>
+            <flexray:WAKE-UP-PATTERN>63</flexray:WAKE-UP-PATTERN>
+            <flexray:ALLOW-HALT-DUE-TO-CLOCK>true</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+            <flexray:ALLOW-PASSIVE-TO-ACTIVE>2</flexray:ALLOW-PASSIVE-TO-ACTIVE>
+            <flexray:ACCEPTED-STARTUP-RANGE>140</flexray:ACCEPTED-STARTUP-RANGE>
+            <flexray:MACRO-INITIAL-OFFSET-A>5</flexray:MACRO-INITIAL-OFFSET-A>
+            <flexray:MACRO-INITIAL-OFFSET-B>5</flexray:MACRO-INITIAL-OFFSET-B>
+            <flexray:MICRO-INITIAL-OFFSET-A>14</flexray:MICRO-INITIAL-OFFSET-A>
+            <flexray:MICRO-INITIAL-OFFSET-B>14</flexray:MICRO-INITIAL-OFFSET-B>
+            <flexray:SINGLE-SLOT-ENABLED>false</flexray:SINGLE-SLOT-ENABLED>
+            <flexray:MICROTICK>0.025</flexray:MICROTICK>
+          </fx:CONTROLLER>
+        </fx:CONTROLLERS>
+        <fx:CONNECTORS>
+          <fx:CONNECTOR ID="imex_a4a627e15a8e738f044f82e_a4a627e15a8e738f044f82d" xsi:type="flexray:CONNECTOR-TYPE">
+            <fx:CHANNEL-REF ID-REF="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847"/>
+            <fx:CONTROLLER-REF ID-REF="imex_a4a61941506f537ac832a4f_a4a61941506f537ac832a4e"/>
+            <fx:INPUTS>
+              <fx:INPUT-PORT ID="x2708_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3e3"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2710_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d9"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2706_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d1"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2707_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d3"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2709_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3eb"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+            </fx:INPUTS>
+            <fx:OUTPUTS>
+              <fx:OUTPUT-PORT ID="x2674_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d5"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+              <fx:OUTPUT-PORT ID="x2673_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3df"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+            </fx:OUTPUTS>
+            <flexray:WAKE-UP-CHANNEL>true</flexray:WAKE-UP-CHANNEL>
+          </fx:CONNECTOR>
+        </fx:CONNECTORS>
+      </fx:ECU>
+      <fx:ECU ID="imex_a4a627e15a8e738f044f830_a4a627e15a8e738f044f82f">
+        <ho:SHORT-NAME>CMM</ho:SHORT-NAME>
+        <fx:CONTROLLERS>
+          <fx:CONTROLLER ID="imex_a4a61941515e099a7d16b12_a4a61941515e099a7d16b11" xsi:type="flexray:CONTROLLER-TYPE">
+            <ho:SHORT-NAME>FLRSdtCtrlr_CMM_FLR1</ho:SHORT-NAME>
+            <flexray:KEY-SLOT-USAGE>
+              <flexray:STARTUP-SYNC>24</flexray:STARTUP-SYNC>
+            </flexray:KEY-SLOT-USAGE>
+            <flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>73</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+            <flexray:CLUSTER-DRIFT-DAMPING>1</flexray:CLUSTER-DRIFT-DAMPING>
+            <flexray:DECODING-CORRECTION>56</flexray:DECODING-CORRECTION>
+            <flexray:LISTEN-TIMEOUT>401202</flexray:LISTEN-TIMEOUT>
+            <flexray:MAX-DRIFT>601</flexray:MAX-DRIFT>
+            <flexray:EXTERN-OFFSET-CORRECTION>0</flexray:EXTERN-OFFSET-CORRECTION>
+            <flexray:EXTERN-RATE-CORRECTION>0</flexray:EXTERN-RATE-CORRECTION>
+            <flexray:LATEST-TX>123</flexray:LATEST-TX>
+            <flexray:MICRO-PER-CYCLE>200000</flexray:MICRO-PER-CYCLE>
+            <flexray:OFFSET-CORRECTION-OUT>349</flexray:OFFSET-CORRECTION-OUT>
+            <flexray:RATE-CORRECTION-OUT>601</flexray:RATE-CORRECTION-OUT>
+            <flexray:SAMPLES-PER-MICROTICK>2</flexray:SAMPLES-PER-MICROTICK>
+            <flexray:DELAY-COMPENSATION-A>10</flexray:DELAY-COMPENSATION-A>
+            <flexray:DELAY-COMPENSATION-B>10</flexray:DELAY-COMPENSATION-B>
+            <flexray:WAKE-UP-PATTERN>63</flexray:WAKE-UP-PATTERN>
+            <flexray:ALLOW-HALT-DUE-TO-CLOCK>true</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+            <flexray:ALLOW-PASSIVE-TO-ACTIVE>2</flexray:ALLOW-PASSIVE-TO-ACTIVE>
+            <flexray:ACCEPTED-STARTUP-RANGE>140</flexray:ACCEPTED-STARTUP-RANGE>
+            <flexray:MACRO-INITIAL-OFFSET-A>5</flexray:MACRO-INITIAL-OFFSET-A>
+            <flexray:MACRO-INITIAL-OFFSET-B>5</flexray:MACRO-INITIAL-OFFSET-B>
+            <flexray:MICRO-INITIAL-OFFSET-A>14</flexray:MICRO-INITIAL-OFFSET-A>
+            <flexray:MICRO-INITIAL-OFFSET-B>14</flexray:MICRO-INITIAL-OFFSET-B>
+            <flexray:SINGLE-SLOT-ENABLED>false</flexray:SINGLE-SLOT-ENABLED>
+            <flexray:MICROTICK>0.025</flexray:MICROTICK>
+          </fx:CONTROLLER>
+        </fx:CONTROLLERS>
+        <fx:CONNECTORS>
+          <fx:CONNECTOR ID="imex_a4a627e15a8e738f044f834_a4a627e15a8e738f044f833" xsi:type="flexray:CONNECTOR-TYPE">
+            <fx:CHANNEL-REF ID-REF="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847"/>
+            <fx:CONTROLLER-REF ID-REF="imex_a4a61941515e099a7d16b12_a4a61941515e099a7d16b11"/>
+            <fx:INPUTS>
+              <fx:INPUT-PORT ID="x2711_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d5"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2713_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d9"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2712_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3df"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+            </fx:INPUTS>
+            <fx:OUTPUTS>
+              <fx:OUTPUT-PORT ID="x2675_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d1"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+              <fx:OUTPUT-PORT ID="x2676_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3eb"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+              <fx:OUTPUT-PORT ID="x2677_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3e3"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+            </fx:OUTPUTS>
+            <flexray:WAKE-UP-CHANNEL>true</flexray:WAKE-UP-CHANNEL>
+          </fx:CONNECTOR>
+        </fx:CONNECTORS>
+      </fx:ECU>
+      <fx:ECU ID="imex_a4a627e15a8e738f044f836_a4a627e15a8e738f044f835">
+        <ho:SHORT-NAME>TCU</ho:SHORT-NAME>
+        <fx:CONTROLLERS>
+          <fx:CONTROLLER ID="imex_a4a61941506f537ac829fd0_a4a61941506f537ac829fcf" xsi:type="flexray:CONTROLLER-TYPE">
+            <ho:SHORT-NAME>FLRSdtCtrlr_TCU_FLR1</ho:SHORT-NAME>
+            <flexray:KEY-SLOT-USAGE>
+              <flexray:STARTUP-SYNC>40</flexray:STARTUP-SYNC>
+            </flexray:KEY-SLOT-USAGE>
+            <flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>73</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+            <flexray:CLUSTER-DRIFT-DAMPING>1</flexray:CLUSTER-DRIFT-DAMPING>
+            <flexray:DECODING-CORRECTION>56</flexray:DECODING-CORRECTION>
+            <flexray:LISTEN-TIMEOUT>401202</flexray:LISTEN-TIMEOUT>
+            <flexray:MAX-DRIFT>601</flexray:MAX-DRIFT>
+            <flexray:EXTERN-OFFSET-CORRECTION>0</flexray:EXTERN-OFFSET-CORRECTION>
+            <flexray:EXTERN-RATE-CORRECTION>0</flexray:EXTERN-RATE-CORRECTION>
+            <flexray:LATEST-TX>123</flexray:LATEST-TX>
+            <flexray:MICRO-PER-CYCLE>200000</flexray:MICRO-PER-CYCLE>
+            <flexray:OFFSET-CORRECTION-OUT>349</flexray:OFFSET-CORRECTION-OUT>
+            <flexray:RATE-CORRECTION-OUT>601</flexray:RATE-CORRECTION-OUT>
+            <flexray:SAMPLES-PER-MICROTICK>2</flexray:SAMPLES-PER-MICROTICK>
+            <flexray:DELAY-COMPENSATION-A>10</flexray:DELAY-COMPENSATION-A>
+            <flexray:DELAY-COMPENSATION-B>10</flexray:DELAY-COMPENSATION-B>
+            <flexray:WAKE-UP-PATTERN>63</flexray:WAKE-UP-PATTERN>
+            <flexray:ALLOW-HALT-DUE-TO-CLOCK>true</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+            <flexray:ALLOW-PASSIVE-TO-ACTIVE>2</flexray:ALLOW-PASSIVE-TO-ACTIVE>
+            <flexray:ACCEPTED-STARTUP-RANGE>140</flexray:ACCEPTED-STARTUP-RANGE>
+            <flexray:MACRO-INITIAL-OFFSET-A>5</flexray:MACRO-INITIAL-OFFSET-A>
+            <flexray:MACRO-INITIAL-OFFSET-B>5</flexray:MACRO-INITIAL-OFFSET-B>
+            <flexray:MICRO-INITIAL-OFFSET-A>14</flexray:MICRO-INITIAL-OFFSET-A>
+            <flexray:MICRO-INITIAL-OFFSET-B>14</flexray:MICRO-INITIAL-OFFSET-B>
+            <flexray:SINGLE-SLOT-ENABLED>false</flexray:SINGLE-SLOT-ENABLED>
+            <flexray:MICROTICK>0.025</flexray:MICROTICK>
+          </fx:CONTROLLER>
+        </fx:CONTROLLERS>
+        <fx:CONNECTORS>
+          <fx:CONNECTOR ID="imex_a4a627e15a8e738f044f83a_a4a627e15a8e738f044f839" xsi:type="flexray:CONNECTOR-TYPE">
+            <fx:CHANNEL-REF ID-REF="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847"/>
+            <fx:CONTROLLER-REF ID-REF="imex_a4a61941506f537ac829fd0_a4a61941506f537ac829fcf"/>
+            <fx:INPUTS>
+              <fx:INPUT-PORT ID="x2715_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3e3"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2733_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3eb"/>
+                <fx:INCLUDED-PDUS>
+                  <fx:INCLUDED-PDU>
+                    <fx:PDU-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f259"/>
+                    <fx:INCLUDED-SIGNALS>
+                      <fx:INCLUDED-SIGNAL>
+                        <fx:SIGNAL-INSTANCE-REF ID-REF="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee83"/>
+                      </fx:INCLUDED-SIGNAL>
+                      <fx:INCLUDED-SIGNAL>
+                        <fx:SIGNAL-INSTANCE-REF ID-REF="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee7d"/>
+                      </fx:INCLUDED-SIGNAL>
+                    </fx:INCLUDED-SIGNALS>
+                  </fx:INCLUDED-PDU>
+                </fx:INCLUDED-PDUS>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2716_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d9"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+            </fx:INPUTS>
+            <flexray:WAKE-UP-CHANNEL>true</flexray:WAKE-UP-CHANNEL>
+          </fx:CONNECTOR>
+        </fx:CONNECTORS>
+      </fx:ECU>
+      <fx:ECU ID="imex_a4a627e15a8e738f044f83c_a4a627e15a8e738f044f83b">
+        <ho:SHORT-NAME>VCU</ho:SHORT-NAME>
+        <fx:CONTROLLERS>
+          <fx:CONTROLLER ID="imex_a4a61941506f537ac83a7e5_a4a61941506f537ac83a7e4" xsi:type="flexray:CONTROLLER-TYPE">
+            <ho:SHORT-NAME>FLRSdtCtrlr_VCU_FLR1</ho:SHORT-NAME>
+            <flexray:KEY-SLOT-USAGE>
+              <flexray:STARTUP-SYNC>32</flexray:STARTUP-SYNC>
+            </flexray:KEY-SLOT-USAGE>
+            <flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>73</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+            <flexray:CLUSTER-DRIFT-DAMPING>1</flexray:CLUSTER-DRIFT-DAMPING>
+            <flexray:DECODING-CORRECTION>56</flexray:DECODING-CORRECTION>
+            <flexray:LISTEN-TIMEOUT>401202</flexray:LISTEN-TIMEOUT>
+            <flexray:MAX-DRIFT>601</flexray:MAX-DRIFT>
+            <flexray:EXTERN-OFFSET-CORRECTION>0</flexray:EXTERN-OFFSET-CORRECTION>
+            <flexray:EXTERN-RATE-CORRECTION>0</flexray:EXTERN-RATE-CORRECTION>
+            <flexray:LATEST-TX>123</flexray:LATEST-TX>
+            <flexray:MICRO-PER-CYCLE>200000</flexray:MICRO-PER-CYCLE>
+            <flexray:OFFSET-CORRECTION-OUT>349</flexray:OFFSET-CORRECTION-OUT>
+            <flexray:RATE-CORRECTION-OUT>601</flexray:RATE-CORRECTION-OUT>
+            <flexray:SAMPLES-PER-MICROTICK>2</flexray:SAMPLES-PER-MICROTICK>
+            <flexray:DELAY-COMPENSATION-A>10</flexray:DELAY-COMPENSATION-A>
+            <flexray:DELAY-COMPENSATION-B>10</flexray:DELAY-COMPENSATION-B>
+            <flexray:WAKE-UP-PATTERN>63</flexray:WAKE-UP-PATTERN>
+            <flexray:ALLOW-HALT-DUE-TO-CLOCK>true</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+            <flexray:ALLOW-PASSIVE-TO-ACTIVE>2</flexray:ALLOW-PASSIVE-TO-ACTIVE>
+            <flexray:ACCEPTED-STARTUP-RANGE>140</flexray:ACCEPTED-STARTUP-RANGE>
+            <flexray:MACRO-INITIAL-OFFSET-A>5</flexray:MACRO-INITIAL-OFFSET-A>
+            <flexray:MACRO-INITIAL-OFFSET-B>5</flexray:MACRO-INITIAL-OFFSET-B>
+            <flexray:MICRO-INITIAL-OFFSET-A>14</flexray:MICRO-INITIAL-OFFSET-A>
+            <flexray:MICRO-INITIAL-OFFSET-B>14</flexray:MICRO-INITIAL-OFFSET-B>
+            <flexray:SINGLE-SLOT-ENABLED>false</flexray:SINGLE-SLOT-ENABLED>
+            <flexray:MICROTICK>0.025</flexray:MICROTICK>
+          </fx:CONTROLLER>
+        </fx:CONTROLLERS>
+        <fx:CONNECTORS>
+          <fx:CONNECTOR ID="imex_a4a627e15a8e738f044f840_a4a627e15a8e738f044f83f" xsi:type="flexray:CONNECTOR-TYPE">
+            <fx:CHANNEL-REF ID-REF="imex_a4a627e15a8e738f044f848_a4a627e15a8e738f044f847"/>
+            <fx:CONTROLLER-REF ID-REF="imex_a4a61941506f537ac83a7e5_a4a61941506f537ac83a7e4"/>
+            <fx:INPUTS>
+              <fx:INPUT-PORT ID="x2731_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3df"/>
+                <fx:INCLUDED-PDUS>
+                  <fx:INCLUDED-PDU>
+                    <fx:PDU-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f289"/>
+                    <fx:INCLUDED-SIGNALS>
+                      <fx:INCLUDED-SIGNAL>
+                        <fx:SIGNAL-INSTANCE-REF ID-REF="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec9"/>
+                      </fx:INCLUDED-SIGNAL>
+                      <fx:INCLUDED-SIGNAL>
+                        <fx:SIGNAL-INSTANCE-REF ID-REF="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec5"/>
+                      </fx:INCLUDED-SIGNAL>
+                      <fx:INCLUDED-SIGNAL>
+                        <fx:SIGNAL-INSTANCE-REF ID-REF="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec7"/>
+                      </fx:INCLUDED-SIGNAL>
+                    </fx:INCLUDED-SIGNALS>
+                  </fx:INCLUDED-PDU>
+                </fx:INCLUDED-PDUS>
+              </fx:INPUT-PORT>
+              <fx:INPUT-PORT ID="x2718_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3eb"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:INPUT-PORT>
+            </fx:INPUTS>
+            <fx:OUTPUTS>
+              <fx:OUTPUT-PORT ID="x2678_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d3"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+              <fx:OUTPUT-PORT ID="x2679_1488470650995">
+                <fx:FRAME-TRIGGERING-REF ID-REF="imex_a4a627e15a8e738f044f232_a4a627e15a8e738f044f3d9"/>
+                <fx:COMPLETE-FRAME/>
+              </fx:OUTPUT-PORT>
+            </fx:OUTPUTS>
+            <flexray:WAKE-UP-CHANNEL>true</flexray:WAKE-UP-CHANNEL>
+          </fx:CONNECTOR>
+        </fx:CONNECTORS>
+      </fx:ECU>
+    </fx:ECUS>
+    <fx:PDUS>
+      <fx:PDU ID="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee6b">
+        <ho:SHORT-NAME>CMM_DAT_04</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee81">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044db3c_a4a627e15a8e738f044db3b"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee7d">
+            <fx:BIT-POSITION>11</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d366_a4a627e15a8e738f044d365"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee83">
+            <fx:BIT-POSITION>7</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d220_a4a627e15a8e738f044d21f"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee7b">
+            <fx:BIT-POSITION>31</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d952_a4a627e15a8e738f044d951"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eeb5">
+        <ho:SHORT-NAME>ERAD_DAT_01</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec9">
+            <fx:BIT-POSITION>55</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e0c4_a4a627e15a8e738f044e0c3"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eecd">
+            <fx:BIT-POSITION>31</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d4e0_a4a627e15a8e738f044d4df"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eecb">
+            <fx:BIT-POSITION>15</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d330_a4a627e15a8e738f044d32f"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec5">
+            <fx:BIT-POSITION>11</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044dc4c_a4a627e15a8e738f044dc4b"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec3">
+            <fx:BIT-POSITION>35</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d0a4_a4a627e15a8e738f044d0a3"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eec7">
+            <fx:BIT-POSITION>7</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d692_a4a627e15a8e738f044d691"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eecf">
+        <ho:SHORT-NAME>VCU_DAT_07</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eedf">
+            <fx:BIT-POSITION>55</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044de9e_a4a627e15a8e738f044de9d"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eedd">
+            <fx:BIT-POSITION>34</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044ce4c_a4a627e15a8e738f044ce4b"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eee1">
+            <fx:BIT-POSITION>35</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e6b2_a4a627e15a8e738f044e6b1"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044eefe_a4a627e15a8e738f044eefd">
+        <ho:SHORT-NAME>VCU_DAT_01</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044eefe_a4a627e15a8e738f044ef19">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e8ce_a4a627e15a8e738f044e8cd"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef8d">
+        <ho:SHORT-NAME>ERAD_DAT_03</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef9f">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044dd24_a4a627e15a8e738f044dd23"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef9d">
+            <fx:BIT-POSITION>24</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044cb1c_a4a627e15a8e738f044cb1b"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef9b">
+            <fx:BIT-POSITION>47</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d2c2_a4a627e15a8e738f044d2c1"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044efa1">
+            <fx:BIT-POSITION>48</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e428_a4a627e15a8e738f044e427"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efc9">
+        <ho:SHORT-NAME>ERAD_DAT_02</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efdb">
+            <fx:BIT-POSITION>7</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044cfc8_a4a627e15a8e738f044cfc7"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efe1">
+            <fx:BIT-POSITION>48</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044dfe8_a4a627e15a8e738f044dfe7"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efdd">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d5ba_a4a627e15a8e738f044d5b9"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efdf">
+            <fx:BIT-POSITION>11</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e3f2_a4a627e15a8e738f044e3f1"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efd7">
+            <fx:BIT-POSITION>24</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044df7a_a4a627e15a8e738f044df79"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efd9">
+            <fx:BIT-POSITION>47</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e67c_a4a627e15a8e738f044e67b"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f005">
+        <ho:SHORT-NAME>CMM_DAT_08</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f00f">
+            <fx:BIT-POSITION>26</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044dd5a_a4a627e15a8e738f044dd59"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f015">
+            <fx:BIT-POSITION>50</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044ccce_a4a627e15a8e738f044cccd"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f011">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044ceee_a4a627e15a8e738f044ceed"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f013">
+            <fx:BIT-POSITION>47</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d43e_a4a627e15a8e738f044d43d"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f029">
+        <ho:SHORT-NAME>CMM_DAT_07</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f033">
+            <fx:BIT-POSITION>38</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044cf90_a4a627e15a8e738f044cf8f"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f035">
+            <fx:BIT-POSITION>11</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e56e_a4a627e15a8e738f044e56d"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f03b">
+            <fx:BIT-POSITION>30</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d474_a4a627e15a8e738f044d473"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f03f">
+            <fx:BIT-POSITION>39</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e898_a4a627e15a8e738f044e897"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f039">
+            <fx:BIT-POSITION>36</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044cae4_a4a627e15a8e738f044cae3"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f03d">
+            <fx:BIT-POSITION>55</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e45e_a4a627e15a8e738f044e45d"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f037">
+            <fx:BIT-POSITION>7</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044d4aa_a4a627e15a8e738f044d4a9"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+      <fx:PDU ID="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f05d">
+        <ho:SHORT-NAME>ERAD_DAT_04</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>8</fx:BYTE-LENGTH>
+        <fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+        <fx:SIGNAL-INSTANCES>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f069">
+            <fx:BIT-POSITION>48</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e78a_a4a627e15a8e738f044e789"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f067">
+            <fx:BIT-POSITION>23</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e6e8_a4a627e15a8e738f044e6e7"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f06b">
+            <fx:BIT-POSITION>24</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e71e_a4a627e15a8e738f044e71d"/>
+          </fx:SIGNAL-INSTANCE>
+          <fx:SIGNAL-INSTANCE ID="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f06d">
+            <fx:BIT-POSITION>47</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+            <fx:SIGNAL-REF ID-REF="imex_a4a627e15a8e738f044e754_a4a627e15a8e738f044e753"/>
+          </fx:SIGNAL-INSTANCE>
+        </fx:SIGNAL-INSTANCES>
+      </fx:PDU>
+    </fx:PDUS>
+    <fx:FRAMES>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f10a_a4a627e15a8e738f044f109">
+        <ho:SHORT-NAME>VCU_S30_R4_B0</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f10a_a4a627e15a8e738f044f10b">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eed0_a4a627e15a8e738f044eecf"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f10e_a4a627e15a8e738f044f10d">
+        <ho:SHORT-NAME>CMM_S23_R2_B1</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f10e_a4a627e15a8e738f044f111">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044ee6c_a4a627e15a8e738f044ee6b"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f118_a4a627e15a8e738f044f117">
+        <ho:SHORT-NAME>CMM_S25_R2_B0</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f118_a4a627e15a8e738f044f119">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f02a_a4a627e15a8e738f044f029"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f126_a4a627e15a8e738f044f125">
+        <ho:SHORT-NAME>CMM_S27_R16_B1</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f126_a4a627e15a8e738f044f129">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f006_a4a627e15a8e738f044f005"/>
+            <fx:BIT-POSITION>120</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f132_a4a627e15a8e738f044f131">
+        <ho:SHORT-NAME>ERAD_S43_R2_B0</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f132_a4a627e15a8e738f044f133">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eeb6_a4a627e15a8e738f044eeb5"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f132_a4a627e15a8e738f044f135">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044efca_a4a627e15a8e738f044efc9"/>
+            <fx:BIT-POSITION>120</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f138_a4a627e15a8e738f044f137">
+        <ho:SHORT-NAME>ERAD_S43_R2_B1</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f138_a4a627e15a8e738f044f13b">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044f05e_a4a627e15a8e738f044f05d"/>
+            <fx:BIT-POSITION>120</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f138_a4a627e15a8e738f044f139">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044ef8e_a4a627e15a8e738f044ef8d"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+      <fx:FRAME ID="imex_a4a627e15a8e738f044f148_a4a627e15a8e738f044f147">
+        <ho:SHORT-NAME>VCU_S32_R2_B0</ho:SHORT-NAME>
+        <fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+        <fx:PDU-INSTANCES>
+          <fx:PDU-INSTANCE ID="imex_a4a627e15a8e738f044f148_a4a627e15a8e738f044f149">
+            <fx:PDU-REF ID-REF="imex_a4a627e15a8e738f044eefe_a4a627e15a8e738f044eefd"/>
+            <fx:BIT-POSITION>56</fx:BIT-POSITION>
+            <fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+          </fx:PDU-INSTANCE>
+        </fx:PDU-INSTANCES>
+      </fx:FRAME>
+    </fx:FRAMES>
+    <fx:SIGNALS>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044cae4_a4a627e15a8e738f044cae3">
+        <ho:SHORT-NAME>REM_TRQ_REQ</ho:SHORT-NAME>
+        <ho:DESC>EMotor torque target</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d31892_a4a624d15571e1174d3187f"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044cb1c_a4a627e15a8e738f044cb1b">
+        <ho:SHORT-NAME>REM_NOM_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Maximum limit of the authorized torque on EL-MOTOR @ actual speed:</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d22879_a4a624d15571e1174d22866"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044ccce_a4a627e15a8e738f044cccd">
+        <ho:SHORT-NAME>REM_MOT_PEAK_ELEC_POWER</ho:SHORT-NAME>
+        <ho:DESC>eRAD peak max discharge HV elec power</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d367b1_a4a624d15571e1174d3679e"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044ce4c_a4a627e15a8e738f044ce4b">
+        <ho:SHORT-NAME>REAR_SPEED_ASR_REQ</ho:SHORT-NAME>
+        <ho:DESC>Rear electrical engine speed requested by ESC</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a618215553c5f9f721ea1_a4a618215553c5f9f721e8e"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044ceee_a4a627e15a8e738f044ceed">
+        <ho:SHORT-NAME>REM_GEN_NOM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:DESC>eRAD nom max charge HV elec power</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d37927_a4a624d15571e1174d37914"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044cf90_a4a627e15a8e738f044cf8f">
+        <ho:SHORT-NAME>REM_CTL_MODE_REQ</ho:SHORT-NAME>
+        <ho:DESC>Torque / Speed / Inert control mode request</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d155736dddfb15dee_a4a624d155736dddfb15ddb"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044cfc8_a4a627e15a8e738f044cfc7">
+        <ho:SHORT-NAME>E2E_CRC_ERAD02</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791bd33_a4a6218155bb6b35791bd20"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d0a4_a4a627e15a8e738f044d0a3">
+        <ho:SHORT-NAME>REM_ESTIM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:DESC>Electrical power estimation for positive and negative e-motor torque</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d2e2de_a4a624d15571e1174d2e2cb"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d220_a4a627e15a8e738f044d21f">
+        <ho:SHORT-NAME>E2E_CRC_CMM04</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791a58f_a4a6218155bb6b35791a57c"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d2c2_a4a627e15a8e738f044d2c1">
+        <ho:SHORT-NAME>REM_PEAK_MAX_TRG_SPD</ho:SHORT-NAME>
+        <ho:DESC>Maximum limit of the authorized torque on EL-MOTOR @synchronized speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d2382c_a4a624d15571e1174d23819"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d330_a4a627e15a8e738f044d32f">
+        <ho:SHORT-NAME>REM_COUPLING_STATE</ho:SHORT-NAME>
+        <ho:DESC>Dog clutch coupling state</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a618215553c5f9f714d82_a4a618215553c5f9f714d6f"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d366_a4a627e15a8e738f044d365">
+        <ho:SHORT-NAME>E2E_ALIVE_CMM04</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791a3b8_a4a6218155bb6b35791a3a5"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d43e_a4a627e15a8e738f044d43d">
+        <ho:SHORT-NAME>REM_GEN_PEAK_ELEC_POWER</ho:SHORT-NAME>
+        <ho:DESC>eRAD peak  max charge HV elec power</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d38b42_a4a624d15571e1174d38b2f"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d474_a4a627e15a8e738f044d473">
+        <ho:SHORT-NAME>REM_AOS_FACTOR</ho:SHORT-NAME>
+        <ho:DESC>eRAD curative driveability ratio</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d3c17c_a4a624d15571e1174d3c169"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d4aa_a4a627e15a8e738f044d4a9">
+        <ho:SHORT-NAME>E2E_CRC_CMM07</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791a204_a4a6218155bb6b35791a1f1"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d4e0_a4a627e15a8e738f044d4df">
+        <ho:SHORT-NAME>REM_ESTIM_TRQ</ho:SHORT-NAME>
+        <ho:DESC>Actual Emotor torque</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d20c09_a4a624d15571e1174d20bf6"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d5ba_a4a627e15a8e738f044d5b9">
+        <ho:SHORT-NAME>DOG_CLU_SOLENOID_CUR</ho:SHORT-NAME>
+        <ho:DESC>Actual solenoid current</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d307e7_a4a624d15571e1174d307d4"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d692_a4a627e15a8e738f044d691">
+        <ho:SHORT-NAME>E2E_CRC_ERAD01</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791b9c8_a4a6218155bb6b35791b9b5"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044d952_a4a627e15a8e738f044d951">
+        <ho:SHORT-NAME>REAR_WHL_TRQ_LOAD_ESTIM</ho:SHORT-NAME>
+        <ho:DESC>PTC Rear wheel torque load estimation</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d39e4b_a4a624d15571e1174d39e38"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044db3c_a4a627e15a8e738f044db3b">
+        <ho:SHORT-NAME>DOG_CLU_SOLENOID_CUR_REQ</ho:SHORT-NAME>
+        <ho:DESC>Dog clutch solenoid current target</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d3462f_a4a624d15571e1174d3461c"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044dc4c_a4a627e15a8e738f044dc4b">
+        <ho:SHORT-NAME>E2E_ALIVE_ERAD01</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791b827_a4a6218155bb6b35791b814"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044dd24_a4a627e15a8e738f044dd23">
+        <ho:SHORT-NAME>MAX_CUR_DISCONT_SOLENOID</ho:SHORT-NAME>
+        <ho:DESC>Maximum available current for disconnect solenoid</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d2f85f_a4a624d15571e1174d2f84c"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044dd5a_a4a627e15a8e738f044dd59">
+        <ho:SHORT-NAME>REM_MOT_NOM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:DESC>eRAD nom max discharge HV elec power</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d357ed_a4a624d15571e1174d357da"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044de9e_a4a627e15a8e738f044de9d">
+        <ho:SHORT-NAME>REAR_WHEELS_RPM</ho:SHORT-NAME>
+        <ho:DESC>Rear wheel average rpm</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155a5165c8916eeb_a4a6218155a5165c8916ed8"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044df7a_a4a627e15a8e738f044df79">
+        <ho:SHORT-NAME>REM_NOM_MIN_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Minimum limit of the authorized torque on EL-MOTOR @ actual speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d2a207_a4a624d15571e1174d2a1f4"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044dfe8_a4a627e15a8e738f044dfe7">
+        <ho:SHORT-NAME>REM_PEAK_MIN_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Minimum  limit of the authorized torque on EL-MOTOR @ actual speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d244f0_a4a624d15571e1174d244dd"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e0c4_a4a627e15a8e738f044e0c3">
+        <ho:SHORT-NAME>REM_SPEED</ho:SHORT-NAME>
+        <ho:DESC>Speed of the Rear electric machine</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_9c993a1153565997c31dd51_9c993a1153565997c31dd3e"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e3f2_a4a627e15a8e738f044e3f1">
+        <ho:SHORT-NAME>E2E_ALIVE_ERAD02</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791bb7f_a4a6218155bb6b35791bb6c"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e428_a4a627e15a8e738f044e427">
+        <ho:SHORT-NAME>REM_PEAK_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Maximum limit of the authorized torque on EL-MOTOR @actual speed:
+- outside electrical boundries (peak electrical power)</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d21835_a4a624d15571e1174d21822"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e45e_a4a627e15a8e738f044e45d">
+        <ho:SHORT-NAME>REM_SPEED_REQ</ho:SHORT-NAME>
+        <ho:DESC>EMotor speed target</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d33561_a4a624d15571e1174d3354e"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e56e_a4a627e15a8e738f044e56d">
+        <ho:SHORT-NAME>E2E_ALIVE_CMM07</ho:SHORT-NAME>
+        <ho:DESC>Please refer to PSA document 02016_16_01039</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a6218155bb6b35791a02f_a4a6218155bb6b35791a01c"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e67c_a4a627e15a8e738f044e67b">
+        <ho:SHORT-NAME>REM_PEAK_MIN_TRG_SPD</ho:SHORT-NAME>
+        <ho:DESC>Minimum limit of the authorized torque on EL-MOTOR @ synchronized speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d15571e1174d2b431_a4a624d15571e1174d2b41e"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e6b2_a4a627e15a8e738f044e6b1">
+        <ho:SHORT-NAME>REM_SPD_PREC_ACT_REQ</ho:SHORT-NAME>
+        <ho:DESC>Deactivation flag of primary rear electrical machine speed pre control</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d158bf7901855f99_a4a624d158bf7901855f90"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e6e8_a4a627e15a8e738f044e6e7">
+        <ho:SHORT-NAME>REM_MAX_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Maximum of the authorized torque (without limit) on EL-MOTOR @ actual speed:</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d158bf7901856876_a4a624d158bf790185686d"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e71e_a4a627e15a8e738f044e71d">
+        <ho:SHORT-NAME>REM_MIN_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+        <ho:DESC>Minimum of the authorized torque (without limit) on EL-MOTOR @ actual speed:</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d158bf79018572ec_a4a624d158bf79018572e3"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e754_a4a627e15a8e738f044e753">
+        <ho:SHORT-NAME>REM_NOM_MAX_TRQ_TRG_SPD</ho:SHORT-NAME>
+        <ho:DESC>Maximum limit of the authorized torque on EL-MOTOR @ synchronized speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d158bf7901857d1f_a4a624d158bf7901857d16"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e78a_a4a627e15a8e738f044e789">
+        <ho:SHORT-NAME>REM_NOM_MIN_TRQ_TRG_SPD</ho:SHORT-NAME>
+        <ho:DESC>Minimum limit of the authorized torque on EL-MOTOR @ synchronized speed</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a624d158bf790185892e_a4a624d158bf7901858925"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e898_a4a627e15a8e738f044e897">
+        <ho:SHORT-NAME>PWT_REAR_CLUTCH_IN_PROG</ho:SHORT-NAME>
+        <ho:DESC>Dog clutch engagement/disengagement in progress</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a627e15920bb5a8fa3dc_a4a627e15920bb5a8fa3d3"/>
+      </fx:SIGNAL>
+      <fx:SIGNAL ID="imex_a4a627e15a8e738f044e8ce_a4a627e15a8e738f044e8cd">
+        <ho:SHORT-NAME>DIAG_MUX_ON</ho:SHORT-NAME>
+        <ho:DESC>Enabling diagnostic of FLR communication stack.</ho:DESC>
+        <fx:CODING-REF ID-REF="imex_a4a627e15920bb5a8fc2f4_a4a627e15920bb5a8fc2eb"/>
+      </fx:SIGNAL>
+    </fx:SIGNALS>
+  </fx:ELEMENTS>
+  <fx:PROCESSING-INFORMATION>
+    <ho:UNIT-SPEC>
+      <ho:UNITS>
+        <ho:UNIT ID="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8">
+          <ho:SHORT-NAME>W</ho:SHORT-NAME>
+          <ho:DISPLAY-NAME>W</ho:DISPLAY-NAME>
+        </ho:UNIT>
+        <ho:UNIT ID="imex_a4a619415089311f99139e3_a4a619415089311f99139d0">
+          <ho:SHORT-NAME>rpm</ho:SHORT-NAME>
+          <ho:DISPLAY-NAME>rpm</ho:DISPLAY-NAME>
+        </ho:UNIT>
+        <ho:UNIT ID="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b">
+          <ho:SHORT-NAME>Nm</ho:SHORT-NAME>
+          <ho:DISPLAY-NAME>N.m</ho:DISPLAY-NAME>
+        </ho:UNIT>
+        <ho:UNIT ID="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d">
+          <ho:SHORT-NAME>NoUnit</ho:SHORT-NAME>
+          <ho:DISPLAY-NAME>No unit</ho:DISPLAY-NAME>
+        </ho:UNIT>
+        <ho:UNIT ID="imex_9c984a1150cdb8441335f34_9c984a1150cdb8441335f33">
+          <ho:SHORT-NAME>A</ho:SHORT-NAME>
+          <ho:DISPLAY-NAME>A</ho:DISPLAY-NAME>
+        </ho:UNIT>
+      </ho:UNITS>
+    </ho:UNIT-SPEC>
+    <fx:CODINGS>
+      <fx:CODING ID="imex_a4a624d15571e1174d357ed_a4a624d15571e1174d357da">
+        <ho:SHORT-NAME>ImpVal_REM_MOT_NOM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>11</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_MOT_NOM_ELEC_POWER</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1500.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>100.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d244f0_a4a624d15571e1174d244dd">
+        <ho:SHORT-NAME>ImpVal_REM_PEAK_MIN_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_PEAK_MIN_TRQ_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-200.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d39e4b_a4a624d15571e1174d39e38">
+        <ho:SHORT-NAME>ImpVal_REAR_WHL_TRQ_LOAD_ESTIM</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>15</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REAR_WHL_TRQ_LOAD_ESTIM</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">30000.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10000.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d33561_a4a624d15571e1174d3354e">
+        <ho:SHORT-NAME>ImpVal_REM_SPEED_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="2C" ho:BASE-DATA-TYPE="A_INT16">
+          <ho:BIT-LENGTH>16</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_SPEED_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a619415089311f99139e3_a4a619415089311f99139d0"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32000.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">32000.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_9c993a1153565997c31dd51_9c993a1153565997c31dd3e">
+        <ho:SHORT-NAME>ImpVal_REM_SPEED</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="2C" ho:BASE-DATA-TYPE="A_INT16">
+          <ho:BIT-LENGTH>16</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_SPEED</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a619415089311f99139e3_a4a619415089311f99139d0"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32000.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">32000.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d22879_a4a624d15571e1174d22866">
+        <ho:SHORT-NAME>ImpVal_REM_NOM_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_NOM_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d3c17c_a4a624d15571e1174d3c169">
+        <ho:SHORT-NAME>ImpVal_REM_AOS_FACTOR</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>7</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_AOS_FACTOR</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">100.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.01</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d155736dddfb15dee_a4a624d155736dddfb15ddb">
+        <ho:SHORT-NAME>ImpVal_REM_CTL_MODE_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ho:BASE-DATA-TYPE="A_BITFIELD">
+          <ho:BIT-LENGTH>2</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_CTL_MODE_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>TEXTTABLE</ho:CATEGORY>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Torque</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Standby</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">2.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">2.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Speed</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">3.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">3.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Reserved</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d2e2de_a4a624d15571e1174d2e2cb">
+        <ho:SHORT-NAME>ImpVal_REM_ESTIM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="2C" ho:BASE-DATA-TYPE="A_INT16">
+          <ho:BIT-LENGTH>12</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_ESTIM_ELEC_POWER</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1300.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1300.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>100.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d3462f_a4a624d15571e1174d3461c">
+        <ho:SHORT-NAME>ImpVal_DOG_CLU_SOLENOID_CUR_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_DOG_CLU_SOLENOID_CUR_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb8441335f34_9c984a1150cdb8441335f33"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">250.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.04</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791a58f_a4a6218155bb6b35791a57c">
+        <ho:SHORT-NAME>ImpVal_E2E_CRC_CMM04</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_CRC_CMM04</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">255.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791bd33_a4a6218155bb6b35791bd20">
+        <ho:SHORT-NAME>ImpVal_E2E_CRC_ERAD02</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_CRC_ERAD02</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">255.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155a5165c8916eeb_a4a6218155a5165c8916ed8">
+        <ho:SHORT-NAME>ImpVal_REAR_WHEELS_RPM</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>16</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REAR_WHEELS_RPM</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a619415089311f99139e3_a4a619415089311f99139d0"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">65525.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.04</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791b9c8_a4a6218155bb6b35791b9b5">
+        <ho:SHORT-NAME>ImpVal_E2E_CRC_ERAD01</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_CRC_ERAD01</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">255.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791b827_a4a6218155bb6b35791b814">
+        <ho:SHORT-NAME>ImpVal_E2E_ALIVE_ERAD01</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>4</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_ALIVE_ERAD01</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">15.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d2a207_a4a624d15571e1174d2a1f4">
+        <ho:SHORT-NAME>ImpVal_REM_NOM_MIN_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_NOM_MIN_TRQ_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-200.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791bb7f_a4a6218155bb6b35791bb6c">
+        <ho:SHORT-NAME>ImpVal_E2E_ALIVE_ERAD02</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>4</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_ALIVE_ERAD02</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">15.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d31892_a4a624d15571e1174d3187f">
+        <ho:SHORT-NAME>ImpVal_REM_TRQ_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="2C" ho:BASE-DATA-TYPE="A_INT16">
+          <ho:BIT-LENGTH>13</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_TRQ_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">-3200.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">3200.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.0625</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d2b431_a4a624d15571e1174d2b41e">
+        <ho:SHORT-NAME>ImpVal_REM_PEAK_MIN_TRG_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_PEAK_MIN_TRG_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-200.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791a204_a4a6218155bb6b35791a1f1">
+        <ho:SHORT-NAME>ImpVal_E2E_CRC_CMM07</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_CRC_CMM07</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">255.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d367b1_a4a624d15571e1174d3679e">
+        <ho:SHORT-NAME>ImpVal_REM_MOT_PEAK_ELEC_POWER</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>11</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_MOT_PEAK_ELEC_POWER</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1500.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>100.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d37927_a4a624d15571e1174d37914">
+        <ho:SHORT-NAME>ImpVal_REM_GEN_NOM_ELEC_POWER</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>11</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_GEN_NOM_ELEC_POWER</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1500.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-150000.0</ho:V>
+                      <ho:V>100.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d307e7_a4a624d15571e1174d307d4">
+        <ho:SHORT-NAME>ImpVal_DOG_CLU_SOLENOID_CUR</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_DOG_CLU_SOLENOID_CUR</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb8441335f34_9c984a1150cdb8441335f33"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">250.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.04</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d21835_a4a624d15571e1174d21822">
+        <ho:SHORT-NAME>ImpVal_REM_PEAK_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_PEAK_MAX_TRQ_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d38b42_a4a624d15571e1174d38b2f">
+        <ho:SHORT-NAME>ImpVal_REM_GEN_PEAK_ELEC_POWER</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>11</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_GEN_PEAK_ELEC_POWER</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb844133aab9_9c984a1150cdb844133aab8"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1500.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-150000.0</ho:V>
+                      <ho:V>100.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791a3b8_a4a6218155bb6b35791a3a5">
+        <ho:SHORT-NAME>ImpVal_E2E_ALIVE_CMM04</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>4</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_ALIVE_CMM04</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">15.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a6218155bb6b35791a02f_a4a6218155bb6b35791a01c">
+        <ho:SHORT-NAME>ImpVal_E2E_ALIVE_CMM07</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>4</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_E2E_ALIVE_CMM07</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382132b0_a4a61941508a1f63821329d"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">15.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>1.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a618215553c5f9f721ea1_a4a618215553c5f9f721e8e">
+        <ho:SHORT-NAME>ImpVal_REAR_SPEED_ASR_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>11</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REAR_SPEED_ASR_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a619415089311f99139e3_a4a619415089311f99139d0"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1800.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>10.0</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d2382c_a4a624d15571e1174d23819">
+        <ho:SHORT-NAME>ImpVal_REM_PEAK_MAX_TRG_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_PEAK_MAX_TRG_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a618215553c5f9f714d82_a4a618215553c5f9f714d6f">
+        <ho:SHORT-NAME>ImpVal_REM_COUPLING_STATE</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ho:BASE-DATA-TYPE="A_BITFIELD">
+          <ho:BIT-LENGTH>2</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_COUPLING_STATE</ho:SHORT-NAME>
+            <ho:CATEGORY>TEXTTABLE</ho:CATEGORY>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">3.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">3.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Invalid</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">2.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">2.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Unknown</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Decoupled</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Coupled</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d2f85f_a4a624d15571e1174d2f84c">
+        <ho:SHORT-NAME>ImpVal_MAX_CUR_DISCO_SOLENOID</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT8">
+          <ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_MAX_CUR_DISCO_SOLENOID</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_9c984a1150cdb8441335f34_9c984a1150cdb8441335f33"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">250.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.04</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d15571e1174d20c09_a4a624d15571e1174d20bf6">
+        <ho:SHORT-NAME>ImpVal_REM_ESTIM_TRQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="2C" ho:BASE-DATA-TYPE="A_INT16">
+          <ho:BIT-LENGTH>12</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_ESTIM_TRQ</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2000.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">2000.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>0.0</ho:V>
+                      <ho:V>0.1</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d158bf7901855f99_a4a624d158bf7901855f90">
+        <ho:SHORT-NAME>ImpVal_REM_SPD_PREC_ACT_REQ</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ho:BASE-DATA-TYPE="A_BITFIELD">
+          <ho:BIT-LENGTH>1</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_SPD_PREC_ACT_REQ</ho:SHORT-NAME>
+            <ho:CATEGORY>TEXTTABLE</ho:CATEGORY>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>No desactivation request</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Desactivation request</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d158bf7901856876_a4a624d158bf790185686d">
+        <ho:SHORT-NAME>ImpVal_REM_MAX_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_MAX_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d158bf79018572ec_a4a624d158bf79018572e3">
+        <ho:SHORT-NAME>ImpVal_REM_MIN_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_MIN_TRQ_NOLIMIT_CUR_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-200.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d158bf7901857d1f_a4a624d158bf7901857d16">
+        <ho:SHORT-NAME>ImpVal_REM_NOM_MAX_TRQ_TRG_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_NOM_MAX_TRQ_TRG_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-10.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a624d158bf790185892e_a4a624d158bf7901858925">
+        <ho:SHORT-NAME>ImpVal_REM_NOM_MIN_TRQ_TRG_SPD</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED" ho:BASE-DATA-TYPE="A_UINT16">
+          <ho:BIT-LENGTH>9</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_REM_NOM_MIN_TRQ_TRG_SPD</ho:SHORT-NAME>
+            <ho:CATEGORY>LINEAR</ho:CATEGORY>
+            <ho:UNIT-REF ID-REF="imex_a4a61941508a1f6382131ae_a4a61941508a1f63821319b"/>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">420.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-RATIONAL-COEFFS>
+                    <ho:COMPU-NUMERATOR>
+                      <ho:V>-200.0</ho:V>
+                      <ho:V>0.5</ho:V>
+                    </ho:COMPU-NUMERATOR>
+					<ho:COMPU-DENOMINATOR> 
+					  <ho:V>1</ho:V> 
+					</ho:COMPU-DENOMINATOR>
+                  </ho:COMPU-RATIONAL-COEFFS>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a627e15920bb5a8fa3dc_a4a627e15920bb5a8fa3d3">
+        <ho:SHORT-NAME>ImpVal_PWT_REAR_CLUTCH_IN_PROG</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ho:BASE-DATA-TYPE="A_BITFIELD">
+          <ho:BIT-LENGTH>1</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_PWT_REAR_CLUTCH_IN_PROG</ho:SHORT-NAME>
+            <ho:CATEGORY>TEXTTABLE</ho:CATEGORY>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Clutch in progress</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>No change</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+      <fx:CODING ID="imex_a4a627e15920bb5a8fc2f4_a4a627e15920bb5a8fc2eb">
+        <ho:SHORT-NAME>ImpVal_DIAG_MUX_ON</ho:SHORT-NAME>
+        <ho:CODED-TYPE CATEGORY="STANDARD-LENGTH-TYPE" ho:BASE-DATA-TYPE="A_BITFIELD">
+          <ho:BIT-LENGTH>1</ho:BIT-LENGTH>
+        </ho:CODED-TYPE>
+        <ho:COMPU-METHODS>
+          <ho:COMPU-METHOD>
+            <ho:SHORT-NAME>CompMeth_DIAG_MUX_ON</ho:SHORT-NAME>
+            <ho:CATEGORY>TEXTTABLE</ho:CATEGORY>
+            <ho:COMPU-INTERNAL-TO-PHYS>
+              <ho:COMPU-SCALES>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>No communication diagnostic</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+                <ho:COMPU-SCALE>
+                  <ho:LOWER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:LOWER-LIMIT>
+                  <ho:UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</ho:UPPER-LIMIT>
+                  <ho:COMPU-CONST>
+                    <ho:VT>Communication diagnostic on</ho:VT>
+                  </ho:COMPU-CONST>
+                </ho:COMPU-SCALE>
+              </ho:COMPU-SCALES>
+            </ho:COMPU-INTERNAL-TO-PHYS>
+          </ho:COMPU-METHOD>
+        </ho:COMPU-METHODS>
+      </fx:CODING>
+    </fx:CODINGS>
+  </fx:PROCESSING-INFORMATION>
+</fx:FIBEX>

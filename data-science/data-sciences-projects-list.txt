@@ -1,0 +1,24 @@
+===================================================== 
+==####=== Data Science Projects Bucket List ==####===
+=====================================================
+== Data Engineering ===
+== Data Analysis ====
+== Data Mining ==
+== Data Viz ==
+- F1 Telemetry
+- stock dashboard
+
+== Machine learning ==
+== Deep Learning ==
+
+
+
+# Reference :
+
+Kaggle for begginners : https://elitedatascience.com/beginner-kaggle
+Google Cloud Tech  : https://www.youtube.com/watch?v=m2DfpM6MyB8
+DataFlair : 16 Data Science Projects with Source Code to Strengthen your Resume : https://data-flair.training/blogs/data-science-project-ideas/
+Dunebook : https://www.dunebook.com/top-20-opensource-kaggle-data-science-projects/
+
+
+

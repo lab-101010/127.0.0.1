@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--?xml-stylesheet type="text/xsl" href="transformation.xsl" ?!!-->
+
+<!-- Trame1 -->
+<trame1 = "VCU">
+    <name></name>
+    <id></id>
+    	<signal1>
+    		<!-- From DBC-->
+    		<invalVal>
+    		</invalVal>
+    		<forbdVal>
+    		</forbdVal>
+    		<avablVal>
+    		</avablVal>
+
+    	</signal1>
+        <signals>
+        <signal2>
+            <!-- From DBC-->
+            <invalVal>
+            </invalVal>
+            <forbdVal>
+            </forbdVal>
+            <avablVal>
+            </avablVal>
+        </signal2>
+</trame1>
+
+<!-- Trame2 -->
+<trame2>
+    <id></id>
+    <signals>
+        <!-- From DBC-->
+            <!-- Valeur Invalide -->
+            <!-- Valeur interdite -->
+            <!-- Valeur disponible-->
+    </signals>
+</trame2>

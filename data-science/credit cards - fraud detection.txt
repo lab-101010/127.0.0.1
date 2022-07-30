@@ -1,0 +1,23 @@
+Client  :  My team looses too much time analysing and validating transactions (false and good) therefore we want to build a smart system that automates this process and detects fraudulent and genuine transaction.
+Data Scientist : Can we automatically determine if a particular transaction is fraudulent or Genuine ?
+Answer is  : Yes 
+Dataset : List of transations 
+Tools : Hand-to-hand Communication to clarify the problem, ML algorithms.  
+
+
+1. Analytic Approach:   Analyze the dataset to identify the type of pattern to address the question.  For this solution I choose to use a Predictive pattern.
+
+2. Data Requirements  : I ask the following questions to build the data requirements : 
+Where datas come from (source) ? Who send them ?  In which frequency ? How the datas look like (content, format etc )
+
+3. Data Collection :  after the previous stage now I go to data gathering and make sure i have enough data to train my model later
+
+4. Data Understanding and Preparation :  after making sure the collected data is representative of the problem to be solved, then I clean, structure, do some exploratory analysis to check data quality and remove all unwanted elements.
+
+5. Modeling and Evaluation :  After some research I use machine learning algorithm model that best answer the client specification and do and iterative evaluation to see if the results meet the business question.
+
+
+# references : 
+
+https://www.youtube.com/watch?v=9bhnJKvrSIU&t=30s
+https://www.youtube.com/watch?v=-d7iQi1I-9c&t=35s

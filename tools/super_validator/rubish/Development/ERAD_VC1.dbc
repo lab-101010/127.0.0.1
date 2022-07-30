@@ -1,0 +1,261 @@
+VERSION "1.0.0Draft"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: OUTIL_DIAG CMM UC_IS VCU TBMU PASS_VCU ERAD PTC
+VAL_TABLE_ SYNCHRO_OBD_COND_Value_Table 3 "Reserved" 2 "OBD COND Default" 1 "OBD COND has been incremented" 0 "OBD COND hasn't been incremented" ;
+VAL_TABLE_ SENS_ROULAGE_Value_Table 3 "Invalid" 2 "Rear toward" 1 "Front toward" 0 "Undefined" ;
+VAL_TABLE_ ETAT_GMP_HYB_value_table 15 "Reserved" 14 "PWT_at_rest" 13 "Reserved" 12 "PWT_in_hold_after_desactivation" 11 "Reserved" 10 "PWT_desactivation" 9 "Reserved" 8 "active_PWT" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "PWT_activation" 3 "Reserved" 2 "Reserved" 1 "Reserved" 0 "PWT_inactive" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ETAT_GMP_HYB : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1927 SUPV_V2_ERAD_787: 8 ERAD
+ SG_ LIBRE_3 : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ APC_LINE_STATE : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ECU_ELEC_STATE_APC : 6|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTC_REGISTRED : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LIBRE_56_2 : 35|28@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LIBRE_56_1 : 15|28@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1474 VCU_5C2: 4 VCU
+ SG_ TEMP_AIR_EXT : 15|8@0+ (0.5,-40) [-40|87.5] "Degree C"  ERAD
+
+BO_ 3 IMMO_ERAD_BSI_067_2: 5 ERAD
+ SG_ RESERVE_24 : 23|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ETAT_IMMO_CALCULATR : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2 IMMO_ERAD_BSI_067_0: 5 ERAD
+ SG_ SEED_32 : 15|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 103 IMMO_ERAD_BSI_067: 5 ERAD
+ SG_ ERAD_BSI_IMMO_LID : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 210 IMMO_BSI_ERAD_0D2: 5 PASS_VCU
+ SG_ KEY_32 : 15|32@0+ (1,0) [0|4294967295] ""  ERAD
+ SG_ BSI_ERAD_IMMO_LID : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 0 NEW_JDD_ERAD_767_1: 8 ERAD
+ SG_ REFERENCE_HORAIRE : 39|32@0+ (0.1,0) [0|429496729.3] "s" Vector__XXX
+ SG_ CODES_DEFAUT : 15|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ NUMERO_TRAME_1 : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1 NEW_JDD_ERAD_767_2: 8 ERAD
+ SG_ SITUATION_VIE_JDD : 39|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RESERVE_8 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ KILOMETRAGE_JDD : 15|24@0+ (1,0) [0|16777214] "" Vector__XXX
+ SG_ NUMERO_TRAME_2 : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1415 ERAD_587: 4 ERAD
+ SG_ LIBRE_16 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_STATOR_TEMP : 15|8@0- (1,-40) [0|214] "Degree C" Vector__XXX
+ SG_ REM_INVERTER_TEMP : 7|8@0- (1,-40) [0|214] "Degree C" Vector__XXX
+
+BO_ 504 CMM_1F8: 7 CMM
+ SG_ VOLONTE_COND : 41|8@0+ (0.5,0) [0|100] ""  ERAD
+ SG_ ENG_RPM_RED_ACCURACY : 37|12@0+ (2,0) [0|8188] ""  ERAD
+ SG_ ETAT_MT_BRUT : 25|4@0+ (1,0) [0|0] ""  ERAD
+ SG_ CPT_PROCESS_4B_1F8 : 3|4@0+ (1,0) [0|15] ""  ERAD
+ SG_ CHKSUM_TRAME_4B_1F8 : 7|4@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1368 CMM_558: 8 CMM
+ SG_ STATE_REM_REQ : 24|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ TEMP_EAU_MOT : 23|8@0+ (1,-40) [-40|214] "Degree C"  ERAD
+ SG_ ABS_THROTTLE_POS_1 : 55|8@0+ (0.39216,0) [0|100] "%"  ERAD
+ SG_ SYNCHRO_IGNITION_CYCLE : 47|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ VALEUR_CHARGE_CALCULEE : 63|8@0+ (0.39216,0) [0|100] "%"  ERAD
+ SG_ SYNCHRO_OBD_COND : 33|2@0+ (1,0) [0|0] ""  ERAD
+ SG_ ETAT_REALISATION_WUC : 34|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ SYNCHRO_DC_GLOBAL : 35|1@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 2015 REQ_EOBD_ON_CAN_7DF: 8 PASS_VCU
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 2047 UDS_ON_CAN_7FF: 8 PASS_VCU
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1999 OUTIL_PRTCLE_CCP_7CF: 8 UC_IS
+ SG_ RESERVE_64 : 7|64@0+ (1,0) [0|0] ""  OUTIL_DIAG
+
+BO_ 1998 OUTIL_PRTCLE_CCP_7CE: 8 UC_IS
+ SG_ RESERVE_64 : 7|64@0+ (1,0) [0|0] ""  OUTIL_DIAG
+
+BO_ 1997 OUTIL_PRTCLE_CCP_7CD: 8 UC_IS
+ SG_ RESERVE_64 : 7|64@0+ (1,0) [0|0] ""  OUTIL_DIAG
+
+BO_ 1996 OUTIL_PRTCLE_CCP_7CC: 8 UC_IS
+ SG_ RESERVE_64 : 7|64@0+ (1,0) [0|0] ""  OUTIL_DIAG
+
+BO_ 1090 VCU_442: 7 VCU
+ SG_ ETAT_GMP_HYB : 55|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CPT_PROCESS_4B_442 : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CHKSUM_TRAME_4B_442 : 47|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SENS_ROULAGE : 34|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ POST_DRIVE_WAKEUP : 38|1@0- (1,0) [0|0] ""  ERAD
+ SG_ DIAG_MUX_ON : 24|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ ETAT_RESEAU_ELEC : 28|4@0+ (1,0) [0|0] ""  ERAD
+ SG_ ETAT_PRINCIP_SEV : 30|2@0+ (1,0) [0|0] ""  ERAD
+ SG_ CTX_JDD : 21|6@0+ (1,0) [0|0] ""  ERAD
+ SG_ REVEIL_PRINCIPAL : 23|2@0+ (1,0) [0|0] ""  ERAD
+ SG_ VITESSE_VEHICULE_ROUES : 7|16@0+ (0.01,0) [0|655.34] "km/h"  ERAD
+
+BO_ 532 TBMU_V2_214: 4 TBMU
+ SG_ HV_BATT_REAL_VOLT : 15|11@0+ (0.25,0) [0|500] "V"  ERAD
+ SG_ CPT_PROCESS_4B_214 : 3|4@0+ (1,0) [0|15] ""  ERAD
+ SG_ CHKSUM_TRAME_4B_214 : 7|4@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 2030 REP_EOBD_ON_CAN_7EE: 8 ERAD
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  PASS_VCU
+
+BO_ 2022 REQ_EOBD_ON_CAN_7E6: 8 PASS_VCU
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1895 NEW_JDD_ERAD_767: 8 ERAD
+ SG_ NUMERO_TRAME : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ NOMBRE_TRAMES : 7|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TYPE_MESSAGE : 1|2@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ RESERVE_1 : 2|1@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ ETAT_DTC : 3|1@0+ (1,0) [0|0] ""  PASS_VCU
+
+BO_ 1703 REQ_DIAG_ON_CAN_6A7: 8 PASS_VCU
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  ERAD
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1671 REP_DIAG_ON_CAN_687: 8 ERAD
+ SG_ DATA_DIAG_8 : 63|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_7 : 55|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_6 : 47|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_5 : 39|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_4 : 31|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_3 : 23|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_2 : 15|8@0+ (1,0) [0|0] ""  PASS_VCU
+ SG_ DATA_DIAG_1 : 7|8@0+ (1,0) [0|0] ""  PASS_VCU
+
+BO_ 1375 NEW_JDD_55F: 1 PASS_VCU
+ SG_ DATA_ACQ_JDD_BSI_2 : 7|8@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1362 V2_BSI_552: 8 PASS_VCU
+ SG_ COMPTEUR_RAZ_GCT : 63|8@0+ (1,0) [0|253] ""  ERAD
+ SG_ KILOMETRAGE : 39|24@0+ (1,0) [0|16777214] "km"  ERAD
+ SG_ CPT_TEMPOREL : 7|32@0+ (0.1,0) [0|429496729.3] "s"  ERAD
+
+BO_ 263 VERS_ERAD_107: 8 ERAD
+ SG_ EDITION_CALIB : 63|8@0+ (1,0) [0|255] ""  PASS_VCU
+ SG_ EDITION_SOFT : 55|8@0+ (1,0) [0|255] ""  PASS_VCU
+ SG_ VERSION_SOFT : 47|8@0+ (1,0) [0|255] ""  PASS_VCU
+ SG_ VERSION_APPLI : 39|8@0+ (1,0) [0|255] ""  PASS_VCU
+ SG_ VERS_DATE2_ANNEE : 31|8@0+ (1,0) [0|99] ""  PASS_VCU
+ SG_ VERS_DATE2_MOIS : 23|8@0+ (1,0) [0|12] ""  PASS_VCU
+ SG_ VERS_DATE2_JOUR : 15|8@0+ (1,0) [0|31] ""  PASS_VCU
+ SG_ VERSION_SYSTEME : 7|8@0+ (1,0) [0|255] ""  PASS_VCU
+
+BO_ 146 ELECTRON_BSI_092: 1 PASS_VCU
+ SG_ EFFAC_DEFAUT_DIAG : 0|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ MODE_DIAG : 6|1@0+ (1,0) [0|0] ""  ERAD
+ SG_ DIAG_INTEGRA_ELEC : 7|1@0+ (1,0) [0|0] ""  ERAD
+
+BO_ 1223 ERAD_4C7: 4 ERAD
+ SG_ LIBRE_7 : 14|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_STATUS : 6|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_STATE : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_INVERTER_FAILURE : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LIBRE_8 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CPT_PROCESS_4B_4C7 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CHKSUM_TRAME_4B_4C7 : 23|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_CLUTCH_FAILURE : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ REM_OVERTEMP_FAILURE : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DMD_CLIGNO_STOP_SVCE_ERAD : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DMD_ALLUMAGE_MIL_DEFAUTS_ERAD : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" INT -2147483648 2147483647;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 504 10;
+BA_ "GenMsgCycleTime" BO_ 532 10;
+BA_ "GenMsgCycleTime" BO_ 1927 1000;
+BA_ "GenMsgCycleTime" BO_ 1474 1000;
+BA_ "GenMsgCycleTime" BO_ 1415 1000;
+BA_ "GenMsgCycleTime" BO_ 1368 100;
+BA_ "GenMsgCycleTime" BO_ 1090 50;
+BA_ "GenMsgCycleTime" BO_ 1362 1000;
+BA_ "GenMsgCycleTime" BO_ 1223 100;
+BA_ "GenSigStartValue" SG_ 1474 TEMP_AIR_EXT 255;
+BA_ "GenSigStartValue" SG_ 1415 REM_STATOR_TEMP 40;
+BA_ "GenSigStartValue" SG_ 1415 REM_INVERTER_TEMP 40;
+VAL_ 1368 SYNCHRO_OBD_COND 3 "Reserved" 2 "OBD COND Default" 1 "OBD COND has been incremented" 0 "OBD COND hasn't been incremented" ;
+VAL_ 1090 ETAT_GMP_HYB 15 "Reserved" 14 "PWT_at_rest" 13 "Reserved" 12 "PWT_in_hold_after_desactivation" 11 "Reserved" 10 "PWT_desactivation" 9 "Reserved" 8 "active_PWT" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "PWT_activation" 3 "Reserved" 2 "Reserved" 1 "Reserved" 0 "PWT_inactive" ;
+VAL_ 1090 SENS_ROULAGE 3 "Invalid" 2 "Rear toward" 1 "Front toward" 0 "Undefined" ;
+

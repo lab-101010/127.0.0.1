@@ -1,12 +1,20 @@
-# Hello-world welcome to my Lab ! 
+# Hey Welcome to my Lab ! 
 
+Here you'll find some of my funniest projects and inventions around several subjects : 
 
-Here you'll find some of my fun projects and inventions around the follow subjects : 
-- mobilty and transportation
+- Mobility and transportation
 - AI & Robotics
-- IoT
+- IoT & Embedded 
+- Data Science
+- Computer Vision
+- Natural Language Processing (NLP)
+- Agriculture & Agritech
+...
+And so on ...
 
 
-Have fun & feel free to take one of these projects to another level.
+# Collaboration and Pull Requests
+
+Have fun & feel free to take one of these projects to next level.
 
 " Creativity worths sharing " ~ Unknown

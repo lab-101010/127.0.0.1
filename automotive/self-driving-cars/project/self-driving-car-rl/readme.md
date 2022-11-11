@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 Building a self-driving car based reinforcement learning and deep learning
 
@@ -11,7 +11,7 @@ This doesn't classify which type of objects are in front of the car. It only avo
     - Delivery robots(in factory, production lines )
     - Autonomous racing cars ...
 
-## requirements
+## Requirements
 Linux : 
 <-- conda install pytorch==0.3.1 -c pytorch -->
 - conda install -c pytorch pytorch 

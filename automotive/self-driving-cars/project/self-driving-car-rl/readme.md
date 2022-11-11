@@ -2,6 +2,15 @@
 
 Building a self-driving car based reinforcement learning and deep learning
 
+The strategy applied in this project allows to avoid objects in the road (this can be: when the car goes out of road and overtake the lane, or even others cars ...)
+This doesn't classify which type of objects are in front of the car. It only avoids them.
+
+- If it succeeds => positive reward(+1), negative reward otherwise. And we repeat the action  until the agent learn by itself how to avoid these objects (RL magic !) 
+- Some applications of this project
+    - Autonomous shuttles
+    - Delivery robots(in factory, production lines )
+    - Autonomous racing cars ...
+
 ## requirements
 Linux : 
 <-- conda install pytorch==0.3.1 -c pytorch -->
@@ -30,6 +39,10 @@ Files/modules :
 ## Contribution and pull requests
 
 feel free to pull request
+
+    @TODO :
+    - classify objects in the road
+    - add log file for reinforment learning visualization 
 
 
 # References

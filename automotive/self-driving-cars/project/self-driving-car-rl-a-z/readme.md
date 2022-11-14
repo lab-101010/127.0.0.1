@@ -1,4 +1,5 @@
-# Overview
+# Self-driving car - based on reinforcement learning
+## Overview
 
 Building a self-driving car based reinforcement learning and deep learning
 
@@ -28,7 +29,7 @@ Files/modules :
     - ReplayMemory() : provides the definition of ReplayMemory
     - Dqn() : Deep Q-Network classifier and learning strategy
 
-- map.py : provides the environement interface
+- map.py : provides the environment interface
 - car.kv : configuration file for the GUI of the car 
 
 ## Usage
@@ -46,3 +47,6 @@ feel free to pull request
 
 
 # References
+
+- [kivy](https://kivy.org/)
+- [gym - openai](https://www.gymlibrary.dev/)

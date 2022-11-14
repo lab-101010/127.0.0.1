@@ -32,7 +32,7 @@ import torch.autograd as autograd
 from torch.autograd import Variable
 
 import ai_settings
-from module.ai_model import Network 
+from module.brain.ai_model import Network 
 
 # Implementing Deep Q-Network (DQN)
 
@@ -57,7 +57,7 @@ class ReplayMemory(object):
         """
             - add experience(element) in the memory
             - self : this object 
-            - event : experience to be stored in the memory
+            - event : experience to be stored in the memory buffer
         """
         self.memory.append(event)
         if len(self.memory) > self.capacity:

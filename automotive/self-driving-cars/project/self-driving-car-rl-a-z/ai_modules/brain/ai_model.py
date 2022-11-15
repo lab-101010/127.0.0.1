@@ -18,7 +18,7 @@
 
 # File history :
 # Afondiel  |  11.11.2022 | Creation 
-# Afondiel  |  11.11.2022 | Last modification 
+# Afondiel  |  15.11.2022 | Last modification 
 
 # Importing the libraries
 import os
@@ -44,6 +44,8 @@ class Network(nn.Module):
         self.nb_action  = nb_action
         self.fc1 = nn.Linear(input_size, hidden_size) #hidden layer=30
         self.fc2 = nn.Linear(hidden_size, nb_action)
+        # activation function
+        self.relu = nn.ReLU()
     
     def forward(self, state):
         # x = F.relu(self.fc1(state))

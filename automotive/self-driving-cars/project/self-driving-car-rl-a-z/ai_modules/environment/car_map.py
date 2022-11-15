@@ -36,9 +36,11 @@ from kivy.config import Config
 from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty
 from kivy.vector import Vector
 from kivy.clock import Clock
+from kivy.lang import Builder
 
 # Importing the Dqn object from our AI in ai_dqn_classifier.py
 import ai_settings
+# import data
 from brain.ai_dqn_classifier import Dqn
 
 # Adding this line if we don't want the right click to put a red point
@@ -51,7 +53,7 @@ n_points = 0
 length = 0
 
 # Getting our AI, which we call "brain", and that contains our neural network that represents our Q-function
-brain = Dqn(ai_settings.MODEL_INPUT_SIZE, ai_settings.MODEL_HIDDEN_SIZE, ai_settings.MODEL_OUTPUT_SIZE, ai_settings.DISCOUNT_FACTOR_GAMMA)
+brain_obj = Dqn(ai_settings.MODEL_INPUT_SIZE, ai_settings.MODEL_HIDDEN_SIZE, ai_settings.MODEL_OUTPUT_SIZE, ai_settings.DISCOUNT_FACTOR_GAMMA)
 # rotation vector(°) : [straight(no rotation ), right, left]
 action2rotation = [0, 20, -20]
 # reward variable at t time(good reward if the car stays btw the lines bad otherwise)
@@ -137,7 +139,7 @@ class Car(Widget):
         if self.sensor2_x > longueur-ai_settings.ENV_EDGE_MAP or self.sensor2_x < ai_settings.ENV_EDGE_MAP or self.sensor2_y > largeur-10 or self.sensor2_y < ai_settings.ENV_EDGE_MAP:
             self.signal2 = 1.
         # sand detection/full density of sensor 3
-        if self.sensor3_x > longueur-ai_settings.ENV_EDGE_MAP or self.sensor3_x < ai_settings.ENV_EDGE_MAP or self.sensor3_y > largeur-10 or self.sensor3_y < ai_settings.ENV_EDGE_MAP0:
+        if self.sensor3_x > longueur-ai_settings.ENV_EDGE_MAP or self.sensor3_x < ai_settings.ENV_EDGE_MAP or self.sensor3_y > largeur-10 or self.sensor3_y < ai_settings.ENV_EDGE_MAP:
             self.signal3 = 1.
 
 class Ball1(Widget):
@@ -173,7 +175,7 @@ class Game(Widget):
         - self this object
         - dt every t iteration time
         """
-        global brain
+        global brain_obj
         global last_reward
         global scores
         global last_distance
@@ -193,9 +195,9 @@ class Game(Widget):
         # Encoded vector sent to the Neural Network
         last_signal = [self.car.signal1, self.car.signal2, self.car.signal3, orientation, -orientation]
         # action to play each time
-        action = brain.update(last_reward, last_signal)
+        action = brain_obj.update(last_reward, last_signal)
         # compute new score based on new action value
-        scores.append(brain.score())
+        scores.append(brain_obj.score())
         # compute new rotation based on new action value
         rotation = action2rotation[action]
         self.car.move(rotation)
@@ -269,6 +271,7 @@ class MyPaintWidget(Widget):
 class CarApp(App):
     """ API Buttons : clear, save and load """
     def build(self):
+        Builder.load_file(ai_settings.ENV_KIVY_CFG_FILE_PATH)
         parent = Game()
         parent.serve_car()
         Clock.schedule_interval(parent.update, 1.0/60.0)
@@ -292,11 +295,11 @@ class CarApp(App):
 
     def save(self, obj):
         print("saving brain...")
-        brain.save()
+        brain_obj.save()
         plt.plot(scores)
         plt.show()
 
     def load(self, obj):
         print("loading last saved brain...")
-        brain.load()
+        brain_obj.load()
 

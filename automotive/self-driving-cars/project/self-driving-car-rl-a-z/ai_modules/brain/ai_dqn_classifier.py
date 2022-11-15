@@ -32,7 +32,7 @@ import torch.autograd as autograd
 from torch.autograd import Variable
 
 import ai_settings
-from module.brain.ai_model import Network 
+from ai_modules.brain.ai_model import Network 
 
 # Implementing Deep Q-Network (DQN)
 
@@ -88,9 +88,12 @@ class Dqn():
         self.last_reward = 0
     
     def select_action(self, state):
-        probs = F.softmax(self.model(Variable(state, volatile = True))*100) # T=100
-        action = probs.multinomial()
-        return action.data[0,0]
+        with torch.no_grad():
+            # probs = F.softmax(self.model(Variable(state, volatile = True))*100) # T=100 solve: Variable and Tensor are merged from v0.4
+            probs = F.softmax(self.model(Variable(state))*100) # T=100
+            probs = F.softmax(self.model(Variable(state))*100) # T=100
+            action = probs.multinomial(num_samples=1)
+            return action.data[0,0]
     
     def learn(self, batch_state, batch_next_state, batch_reward, batch_action):
         outputs = self.model(batch_state).gather(1, batch_action.unsqueeze(1)).squeeze(1)
@@ -98,11 +101,14 @@ class Dqn():
         target = self.gamma*next_outputs + batch_reward
         td_loss = F.smooth_l1_loss(outputs, target)
         self.optimizer.zero_grad()
-        td_loss.backward(retain_variables = True)
+        # td_loss.backward(retain_variables = True) #issue in the torch 1.13.0
+        td_loss.backward(retain_graph = True)
+        
         self.optimizer.step()
     
     def update(self, reward, new_signal):
         new_state = torch.Tensor(new_signal).float().unsqueeze(0)
+        # print("$$$$$$ DEBUG NEW STATE: ", new_state) #@TODO create a log file
         self.memory.push((self.last_state, new_state, torch.LongTensor([int(self.last_action)]), torch.Tensor([self.last_reward])))
         action = self.select_action(new_state)
         if len(self.memory.memory) > 100:

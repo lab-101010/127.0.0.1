@@ -19,7 +19,7 @@
 
 # File history :
 # Afondiel  |  11.11.2022 | Creation 
-# Afondiel  |  11.11.2022 | Last modification 
+# Afondiel  |  11.14.2022 | Last modification 
 
 import os
 import sys
@@ -30,7 +30,7 @@ import logging
 from kivy.app import App
 
 
-from module.env.car_map import CarApp
+from ai_modules.environment.car_map import CarApp
 
 """ 
 Main module

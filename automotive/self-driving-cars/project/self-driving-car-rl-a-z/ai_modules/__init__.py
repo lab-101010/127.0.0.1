@@ -1,6 +1,6 @@
 import sys
 
-if 'module' not in sys.path:
+if 'ai_modules' not in sys.path:
     import os
     module_path = os.path.dirname(os.path.abspath(__file__))
     sys.path.append(module_path)

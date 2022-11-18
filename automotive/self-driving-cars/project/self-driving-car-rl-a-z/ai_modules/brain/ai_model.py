@@ -43,7 +43,8 @@ import ai_settings
 
 class Network(nn.Module):
     """ Deep Feed Forward (DFF) Neural Network """
-    def __init__(self, input_size, hidden_size, nb_action):
+    def __init__(self, input_size, nb_action):
+    # def __init__(self, input_size, hidden_size, nb_action):
         """object constructor
         - self: this object
         - input_size : inputs layers (5 nodes : 3 sensor signals, +orientation, -orientation)
@@ -53,8 +54,8 @@ class Network(nn.Module):
         super(Network, self).__init__()
         self.input_size = input_size
         self.nb_action  = nb_action
-        self.fc1        = nn.Linear(input_size, hidden_size)
-        self.fc2        = nn.Linear(hidden_size, nb_action)
+        self.fc1        = nn.Linear(input_size, ai_settings.MODEL_HIDDEN_SIZE)
+        self.fc2        = nn.Linear(ai_settings.MODEL_HIDDEN_SIZE, nb_action)
         # activation function
         self.activation = nn.ReLU()
     

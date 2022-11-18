@@ -21,7 +21,7 @@
 
 # File history :
 # Afondiel  |  11.11.2022 | Creation 
-# Afondiel  |  15.11.2022 | Last modification 
+# Afondiel  |  18.11.2022 | Last modification 
 
 # Importing the libraries
 import os

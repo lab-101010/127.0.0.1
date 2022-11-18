@@ -19,7 +19,7 @@
 
 # File history :
 # Afondiel  |  11.11.2022 | creation 
-# Afondiel  |  14.11.2022 | Last modification 
+# Afondiel  |  18.11.2022 | Last modification 
 
 # Importing the libraries
 import numpy as np
@@ -53,7 +53,8 @@ n_points = 0
 length = 0
 
 # Getting our AI, which we call "brain", and that contains our neural network that represents our Q-function
-brain_obj = Dqn(ai_settings.MODEL_INPUT_SIZE, ai_settings.MODEL_HIDDEN_SIZE, ai_settings.MODEL_OUTPUT_SIZE, ai_settings.DISCOUNT_FACTOR_GAMMA)
+# brain_obj = Dqn(ai_settings.MODEL_INPUT_SIZE, ai_settings.MODEL_HIDDEN_SIZE, ai_settings.MODEL_OUTPUT_SIZE, ai_settings.DISCOUNT_FACTOR_GAMMA)
+brain_obj = Dqn(ai_settings.MODEL_INPUT_SIZE, ai_settings.MODEL_OUTPUT_SIZE, ai_settings.DISCOUNT_FACTOR_GAMMA)
 # rotation vector(°) : [straight(no rotation ), right, left]
 action2rotation = [0, 20, -20]
 # reward variable at t time(good reward if the car stays btw the lines bad otherwise)

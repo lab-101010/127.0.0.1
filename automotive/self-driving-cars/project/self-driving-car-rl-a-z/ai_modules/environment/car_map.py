@@ -78,7 +78,7 @@ def init():
     global goal_x
     global goal_y
     global first_update
-    sand = np.zeros((longueur,largeur))
+    sand = np.zeros((longueur, largeur))
     goal_x = 20
     goal_y = largeur - 20
     first_update = False
@@ -190,6 +190,7 @@ class Game(Widget):
         if first_update:
             init()
 
+        # goal x corner to y corner
         xx = goal_x - self.car.x
         yy = goal_y - self.car.y
         orientation = Vector(*self.car.velocity).angle((xx,yy))/180.
@@ -207,7 +208,8 @@ class Game(Widget):
         self.ball2.pos = self.car.sensor2
         self.ball3.pos = self.car.sensor3
 
-        if sand[int(self.car.x),int(self.car.y)] > 0:
+        # if any obstacle is detected
+        if sand[int(self.car.x), int(self.car.y)] > 0:
             self.car.velocity = Vector(ai_settings.CAR_VELOCITY_MIN, 0).rotate(self.car.angle)
             last_reward = -1
         else: # otherwise

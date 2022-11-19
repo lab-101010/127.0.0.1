@@ -135,7 +135,7 @@ class Dqn():
             # solve: Variable and Tensor are merged since torch v0.4
             # state is tensor is wrapper into Variable, no gradient used in the computation
             # temperature set to max => model confidence set to max too!!! 
-            probs = F.softmax(self.model(Variable(state))*ai_settings.TEMPERATURE_PARAM) 
+            probs = F.softmax(self.model(Variable(state))*ai_settings.TEMPERATURE_PARAM, dim=1) 
             action = probs.multinomial(num_samples=1)   # generates random draws from probabilities
             return action.data[0,0]
     
@@ -195,15 +195,19 @@ class Dqn():
     
     def save(self):
         """ save the model """
-        torch.save({'state_dict': self.model.state_dict(),
-                    'optimizer' : self.optimizer.state_dict(),
-                   }, 'last_brain.pth')
+        torch.save(
+                    {
+                        'state_dict': self.model.state_dict(),
+                        'optimizer' : self.optimizer.state_dict(),
+                    },
+                    ai_settings.AI_MODEL_PATH
+        )
     
     def load(self):
         """" load the model """
-        if os.path.isfile('last_brain.pth'):
+        if os.path.isfile(ai_settings.AI_MODEL_PATH):
             print("=> loading checkpoint... ")
-            checkpoint = torch.load('last_brain.pth')
+            checkpoint = torch.load(ai_settings.AI_MODEL_PATH)
             self.model.load_state_dict(checkpoint['state_dict'])
             self.optimizer.load_state_dict(checkpoint['optimizer'])
             print("done !")

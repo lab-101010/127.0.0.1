@@ -43,11 +43,16 @@ Files/modules :
 
 ## Contribution and pull requests
 
-feel free to pull request
+Below some few features/tasks to add up. So feel free to pull request
 
     @TODO :
-    - classify objects in the road
-    - add log file for reinforment learning visualization 
+    - classify objects in the road 
+      - On kivy UI env we can add/draw new objects, then classify them 
+        - passenger crossing the road
+        - another car parked in the road
+        - other objects
+        - signals (too ambitious but why not ? )
+    - add log file for reinforment learning visualization and debugging
 
 
 # References

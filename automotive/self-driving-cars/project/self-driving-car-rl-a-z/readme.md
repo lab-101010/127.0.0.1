@@ -16,15 +16,25 @@ This doesn't classify which type of objects are in front of the car. It only avo
     - Autonomous racing cars ...
 
 ## Requirements
-Linux : 
-<-- conda install pytorch==0.3.1 -c pytorch -->
-- conda install -c pytorch pytorch 
-- conda install -c conda-forge kivy
+<!-- conda install pytorch==0.3.1 -c pytorch -->
 
-Windows : 
-<-- conda install -c peterjc123 pytorch-cpu -->
-- conda install -c pytorch pytorch 
-- conda install -c conda-forge kivy
+Get conda here => [conda](https://github.com/conda/conda) based on your OS, then you can install the requirements pkg
+```
+Kivy=2.1.0
+matplotlib=3.6.2
+numpy=1.23.3
+torch=1.13.0
+``` 
+### Linux 
+
+```python
+conda install -r requirements.txt
+```
+### Windows
+
+```python
+conda install -r requirements.txt
+```
 
 Files/modules : 
 - ai.py : the brain module. It provides 3 Classes
@@ -37,9 +47,9 @@ Files/modules :
 
 ## Usage
 
-- Linux: python main.py
-
-- Windows: python main.py
+```python 
+python main.py
+```
 
 ## Contribution and pull requests
 

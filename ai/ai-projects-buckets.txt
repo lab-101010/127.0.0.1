@@ -6,8 +6,9 @@ Artificial Intelligence Project Ideas for 2022 from Dataflair blog (link below i
 easy :
 
 1. Handwritten Digits Recognition
+    1.1 - OCR (optical character recognition)
 2. Spoiler Blocker Extension
-3. Lane Line Detection
+3. Lane Line Detection => OK
 4. Spam Classifier
 5. Optimal Path
 
@@ -30,6 +31,7 @@ advanced :
 5. AI Bot to Play Snake Game
 6. Self-Driving Car
 7. Music Recommendation App
+8. turing machine
 
 
 

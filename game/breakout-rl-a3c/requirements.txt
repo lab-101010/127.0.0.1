@@ -1,0 +1,8 @@
+python
+pytorch 
+numpy
+matplotlib
+gym
+# akode gym
+# menpo ffmpeg
+opencv

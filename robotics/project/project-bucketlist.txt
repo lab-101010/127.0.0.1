@@ -1,0 +1,9 @@
+ros-sensor-fusion
+ros-actionary control
+ros-mapping
+
+algos : 
+- odometry
+- a start (pathfinding)
+- dikistra
+- kruskal

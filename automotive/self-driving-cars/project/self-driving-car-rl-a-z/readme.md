@@ -69,3 +69,4 @@ Below some few features/tasks to add up. So feel free to pull request
 
 - [kivy](https://kivy.org/)
 - [gym - openai](https://www.gymlibrary.dev/)
+- [Q-learning paper by DeepMind](https://github.com/afondiel/research-notes/blob/85aab4aaac6321ea01fc3e0ac9c1869c3a089593/ai/research-papers/Playing-Atari-with-Deep-Reinforcement-Learning-deepmind-19-dec-2013.pdf)

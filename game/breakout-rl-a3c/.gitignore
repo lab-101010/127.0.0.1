@@ -1,0 +1,11 @@
+# Log files
+*.Log
+*.log.*
+
+# vsc env 
+.vscode
+
+# _pycache
+__pycache__
+
+.DS_Store

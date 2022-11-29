@@ -5,11 +5,11 @@ from __future__ import print_function
 import os
 import torch
 import torch.multiprocessing as mp
-from envs import create_atari_env
-from model import ActorCritic
-from train import train
+from modules.environment.envs import create_atari_env
+from modules.brain.model import ActorCritic
+from modules.brain.train import train
+from modules.brain.my_optim import SharedAdam
 from test import test
-import my_optim
 
 # Gathering all the parameters (that we can modify to explore)
 class Params():
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     shared_model = ActorCritic(env.observation_space.shape[0], env.action_space)
     shared_model.share_memory()
     #  computer gradient descent
-    optimizer = my_optim.SharedAdam(shared_model.parameters(), lr=params.lr)
+    optimizer = SharedAdam(shared_model.parameters(), lr=params.lr)
     optimizer.share_memory()
     #  create a list of process for agent thread
     processes = []

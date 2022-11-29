@@ -23,6 +23,11 @@ The objective of the game is to clear all of the bricks on the screen by hitting
 
     4. The player gets one point for each brick broken
 
+also make sure to accept the gym license 
+
+```
+pip install gym[accept-rom-license]
+```
 ## The AI
 The AI uses Deep Convolutional Neural Network and reinforcement learning algorithm on game environment from gym OpenAI
 

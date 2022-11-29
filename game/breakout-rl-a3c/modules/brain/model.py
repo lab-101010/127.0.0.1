@@ -7,6 +7,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# import local pkg 
+import ai_settings
+
 # Initializing and setting the variance of a tensor of weights
 
 def normalized_columns_initializer(weights, std=1.0):
@@ -20,7 +23,11 @@ def normalized_columns_initializer(weights, std=1.0):
     # create a random tensor of weight with same size as the input weight
     out = torch.randn(weights.size())
     # sqrt normalization
-    out *= std / torch.sqrt(out.pow(2).sum(1).expand_as(out)) # var(out) = std^2
+    # out *= std / torch.sqrt(out.pow(2).sum(1).expand_as(out)) # var(out) = std^2  
+    """
+    sum(0) : sum of column
+    sum(1) : sum of row of the tensor => size => [4, 256] => create ERROR!!! """ 
+    out *= std / torch.sqrt(out.pow(2).expand_as(out)) # var(out) = std^2    
     return out
 
 # Initializing the weights of the neural network in an optimal way for the learning

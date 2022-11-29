@@ -1,0 +1,71 @@
+    # DEBUG
+    out1 = out.squeeze(-1)
+    out2 = out.unsqueeze(-1)
+    print(f'DEBUG - random Normal weights - out  : {out}\n')
+    print(f'DEBUG - random Normal weights out size  : {out.size()}\n')
+    # print(f'DEBUG - random Normal weights - out1  : {out1}\n')
+    # print(f'DEBUG - random Normal weights - out1 size  : {out1.size()}\n')
+    # print(f'DEBUG - random Normal weights - out2   : {out2}\n')
+    # print(f'DEBUG - random Normal weights - out2  size  : {out2.size()}\n')
+    # sqrt normalization
+    
+    # sum funtion 
+    # sum(0): column
+    # sum(1):  row
+    
+    # pw = out.pow(2).sum(1)
+
+    pw = out.pow(2)
+    # pw = out.pow(2).sum(1).expand_as(out)
+    # pw = out.pow(2).sum(1).expand_as(out)
+
+    print ('pw.sum : ', pw.sum(1))
+    print ('\npw.sum.size : ', (pw.sum(1)).size())
+    print ('pw : ', pw)
+    print ('\npw size : ', pw.size())
+    print('pw.expand_as(out) : ', pw.expand_as(out))
+    den = torch.sqrt(pw)
+    # den = torch.sqrt(pw)
+    print ('\nden : ', den)
+    # out *= std / den # var(out) = std^2
+    print ('debug size : ', (out*std).size())
+    print('\n den size : ', den.size())
+    out = (out*std) / den # var(out) = std^2
+
+    print ('\nafter norm : ', out)
+
+   
+""" # windows multiprocessing issues
+
+(breakout-rl) E:\Lab\my-lab\game\breakout-rl-a3c>python main.py
+A.L.E: Arcade Learning Environment (version 0.7.5+db37282)
+[Powered by Stella]
+Traceback (most recent call last):
+  File "E:\Lab\my-lab\game\breakout-rl-a3c\main.py", line 43, in <module>
+    p.start()
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\context.py", line 336, in _Popen
+    return Popen(process_obj)
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\popen_spawn_win32.py", line 93, in __init__
+    reduction.dump(process_obj, to_child)
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+TypeError: cannot pickle 'module' object
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "L:\anaconda3\envs\breakout-rl\lib\multiprocessing\spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+EOFError: Ran out of input
+
+(breakout-rl) E:\Lab\my-lab\game\breakout-rl-a3c>
+
+
+### solution : https://github.com/taesungp/contrastive-unpaired-translation/issues/52
+
+
+"""

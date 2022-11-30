@@ -60,7 +60,7 @@ feel free to pull request if you some great ideas to share
 # References
 
 - [gym - OpenAi](https://www.gymlibrary.dev/)
-- [gym- universe](https://openai.com/blog/universe/)
+- [gym - Universe](https://openai.com/blog/universe/)
 - [OpenAI Baselines: ACKTR & A2C](https://openai.com/blog/baselines-acktr-a2c/)
 - [python A3C - by Ilya Kostrikov ](https://github.com/ikostrikov/pytorch-a3c)
 - [A2C - A3C paper](https://github.com/afondiel/research-notes/blob/master/ai/research-papers/asynchronous-methods-for-deep-reinforcement-learning-paper-2016-A3C-google-MILA.pdf)

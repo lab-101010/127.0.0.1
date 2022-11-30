@@ -1,15 +1,18 @@
-# File : test.py 
+# File : ai_test.py 
 # Description : Test Agent
 
 import torch
 import torch.nn.functional as F
-from envs import create_atari_env
-from model import ActorCritic
+from environment.envs import create_atari_env
+from brain.model import ActorCritic
 from torch.autograd import Variable
 import time
 from collections import deque
 
-def test(rank, params, shared_model):
+# import local modules
+import ai_settings
+
+def agent_test(rank, params, shared_model):
     torch.manual_seed(params.seed + rank)
     env = create_atari_env(params.env_name, video=True)
     env.seed(params.seed + rank)

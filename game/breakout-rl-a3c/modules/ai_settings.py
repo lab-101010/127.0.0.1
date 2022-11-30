@@ -32,7 +32,7 @@ MOVING_AVG_SIZE            = 100
 WINDOW_WIDTH          = 280
 WINDOW_HIGHT          = 280
 
-VIDEO_FILE_PATH  = 'data\\videos'
+VIDEO_FILE_PATH  = 'tools\\videos'
 
 # App parameters
 

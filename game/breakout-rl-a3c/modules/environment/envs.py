@@ -1,4 +1,5 @@
-# Improvement of the Gym environment with universe
+# File : envs.py 
+# Description : Improvement of the Gym environment with universe
 
 
 import cv2
@@ -7,6 +8,9 @@ import numpy as np
 from gym.spaces.box import Box
 from gym import wrappers
 
+# import local modules
+import ai_test 
+import ai_settings 
 
 # Taken from https://github.com/openai/universe-starter-agent
 
@@ -14,7 +18,9 @@ from gym import wrappers
 def create_atari_env(env_id, video=False):
     env = gym.make(env_id)
     if video:
-        env = wrappers.Monitor(env, 'test', force=True)
+        # env = wrappers.Monitor(env, 'test', force=True)
+        # env = wrappers.Monitor(env, ai_settings.VIDEO_FILE_PATH, force=True)
+        env = gym.wrappers.RecordVideo(env, ai_settings.VIDEO_FILE_PATH)
     env = MyAtariRescale42x42(env)
     env = MyNormalizedEnv(env)
     return env

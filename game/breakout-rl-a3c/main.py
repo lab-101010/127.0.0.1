@@ -9,7 +9,11 @@ from modules.environment.envs import create_atari_env
 from modules.brain.model import ActorCritic
 from modules.brain.train import train
 from modules.brain.my_optim import SharedAdam
-from test import test
+
+# import local librairies
+# import modules.ai_test
+from modules.ai_test import agent_test
+import modules.ai_settings
 
 # Gathering all the parameters (that we can modify to explore)
 class Params():
@@ -26,10 +30,10 @@ class Params():
 # Main run
 if __name__ == '__main__':
     os.environ['OMP_NUM_THREADS'] = '1'
-    # init model params
+    # create params object
     params = Params()
     torch.manual_seed(params.seed)
-    #  start env
+    # start env
     env = create_atari_env(params.env_name)
     # model object
     shared_model = ActorCritic(env.observation_space.shape[0], env.action_space)
@@ -39,13 +43,19 @@ if __name__ == '__main__':
     optimizer.share_memory()
     #  create a list of process for agent thread
     processes = []
-    p = mp.Process(target=test, args=(params.num_processes, params, shared_model))
+    # create multiprocessing object for agent experiences or tests 
+    p = mp.Process(target=agent_test, args=(params.num_processes, params, shared_model))
+    # start test
     p.start()
     processes.append(p)
 
+    # create multiprocessing object to train the agent based on numbers of rank/experiences created by in the test process[]
     for rank in range(0, params.num_processes):
         p = mp.Process(target=train, args=(rank, params, shared_model, optimizer))
+        # start train
         p.start()
         processes.append(p)
     for p in processes:
+        # run one process by one 
         p.join()
+

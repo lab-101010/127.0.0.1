@@ -3,8 +3,8 @@
 
 import torch
 import torch.nn.functional as F
-from envs import create_atari_env
-from model import ActorCritic
+from environment.envs import create_atari_env
+from brain.model import ActorCritic
 from torch.autograd import Variable
 # Variable and Tensor already merged since the torch v0.4.x
 # No need to convert tensor to variable no more 

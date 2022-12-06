@@ -1,7 +1,7 @@
 # Breakout game - A3C
 ## Overview
 
-This project aims to teach an AI to play the game Breakout. 
+This project aims to teach an AI how to play the game Breakout. 
 
 ![alt text](https://upload.wikimedia.org/wikipedia/en/c/cd/Breakout_game_screenshot.png)
 
@@ -11,7 +11,7 @@ This project aims to teach an AI to play the game Breakout.
 
 [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) is an arcade video game developed and published by [Atari](https://en.wikipedia.org/wiki/Atari,_Inc) and released on May 13, 1976
 
-The objective of the game is to clear all of the bricks on the screen by hitting them with a ball
+The goal of the game is to clear all the bricks on the screen by hitting them with a ball
 
     Breakout game - rules
 
@@ -24,9 +24,11 @@ The objective of the game is to clear all of the bricks on the screen by hitting
     4. The player gets one point for each brick broken
 
 ## The AI
-The AI uses Deep Convolutional Neural Network and reinforcement learning algorithm on game environment from gym OpenAI
+The AI uses Deep Convolutional Neural Network and reinforcement learning algorithm on game environment called gym and developped by [OpenAI](https://github.com/openai).
 
-- If it succeeds => positive reward(+1), negative reward otherwise. And we repeat the action  until the agent learn by itself how to avoid these objects (RL magic !) 
+- I use the A3C algorithm from a3c paper.
+
+- If the Agent succeeds => gets positive reward(+1) or a negative reward otherwise. And we repeat the action until the agent learns how to play the game (RL magic !) 
 - Some applications of this project
     - computer vision & image processing
     - self-driving perception

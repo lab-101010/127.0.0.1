@@ -26,7 +26,10 @@ The goal of the game is to clear all the bricks on the screen by hitting them wi
 ## The AI
 The AI uses Deep Convolutional Neural Network and reinforcement learning algorithm on game environment called gym and developped by [OpenAI](https://github.com/openai).
 
-- I use the A3C algorithm from a3c paper.
+- We use the A3C algorithm from a3c paper from [DeepMind](https://github.com/afondiel/research-notes/blob/master/ai/research-papers/asynchronous-methods-for-deep-reinforcement-learning-paper-2016-A3C-google-MILA.pdf).
+
+- The A3C is based on two components : ```A3C = Actor (Value function) + Critic (Policy function)``` and several Agents run in parallel to avoid correlation i.e agents have different starting point for better exploration
+- We also add a LSTM NN to store past states/events (more accurate than memory replay) 
 
 - If the Agent succeeds => gets positive reward(+1) or a negative reward otherwise. And we repeat the action until the agent learns how to play the game (RL magic !) 
 - Some applications of this project

@@ -12,8 +12,11 @@ from modules.brain.my_optim import SharedAdam
 
 # import local librairies
 # import modules.ai_test
-from modules.ai_test import agent_test
+# from modules.ai_test import agent_test
+from ai_test import agent_test
 import modules.ai_settings
+from modules.common.Logger import setup_logger
+
 
 # Gathering all the parameters (that we can modify to explore)
 class Params():
@@ -27,8 +30,15 @@ class Params():
         self.max_episode_length = 10000
         self.env_name = 'Breakout-v0'
 
+logger = setup_logger(name='main', log_file='main.log', level=logging.DEBUG)
+
 # Main run
 if __name__ == '__main__':
+    # starting the app
+    print("Start the App ... ")
+    # logging 
+    logger.info("Start the App ... ")
+
     os.environ['OMP_NUM_THREADS'] = '1'
     # create params object
     params = Params()
